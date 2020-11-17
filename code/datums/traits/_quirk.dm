@@ -78,7 +78,7 @@
 /datum/quirk/proc/clone_data() //return additional data that should be remembered by cloning
 /datum/quirk/proc/on_clone(data) //create the quirk from clone data
 
-/datum/quirk/process()
+/datum/quirk/process(delta_time)
 	if(QDELETED(quirk_holder))
 		quirk_holder = null
 		qdel(src)

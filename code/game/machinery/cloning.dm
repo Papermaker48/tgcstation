@@ -94,16 +94,6 @@
 		if(efficiency > 5)
 			. += "<span class='notice'>Pod has been upgraded to support autoprocessing and apply beneficial mutations.</span>"
 
-//The return of data disks?? Just for transferring between genetics machine/cloning machine.
-//TO-DO: Make the genetics machine accept them.
-/obj/item/disk/data
-	name = "cloning data disk"
-	icon_state = "datadisk0" //Gosh I hope syndies don't mistake them for the nuke disk.
-	var/list/fields = list()
-	var/list/mutations = list()
-	var/max_mutations = 6
-	var/read_only = FALSE //Well,it's still a floppy disk
-
 //Disk stuff.
 /obj/item/disk/data/Initialize()
 	. = ..()
@@ -275,7 +265,7 @@
 				var/datum/bank_account/D = SSeconomy.get_dep_account(payment_department)
 				if(D)
 					D.adjust_money(fair_market_price)
-		if(mob_occupant && (mob_occupant.stat == DEAD) || (mob_occupant.suiciding) || mob_occupant.hellbound)  //Autoeject corpses and suiciding dudes.
+		if(mob_occupant && (mob_occupant.stat == DEAD) || (mob_occupant.suiciding))  //Autoeject corpses and suiciding dudes.
 			connected_message("Clone Rejected: Deceased.")
 			if(internal_radio)
 				SPEAK("The cloning of [mob_occupant.real_name] has been \
