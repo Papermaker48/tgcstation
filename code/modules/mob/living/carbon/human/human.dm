@@ -1331,3 +1331,8 @@
 
 /mob/living/carbon/human/species/zombie/krokodil_addict
 	race = /datum/species/krokodil_addict
+
+//mob/living/carbon/human/Move(var/turf/NewLoc, direct) //start running. this is a threat.
+	//. = ..()
+	//if(m_intent == MOVE_INTENT_RUN)
+	//sprint_particle_small(src,get_step(NewLoc,turn(direct,180)))
