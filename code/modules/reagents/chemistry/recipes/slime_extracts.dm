@@ -69,7 +69,7 @@
 
 /datum/chemical_reaction/slime/slimefelinid
 	results = list(/datum/reagent/mutationtoxin/felinid = 1)
-	required_reagents = list(/datum/reagent/sugar = 1)
+	required_reagents = list(/datum/reagent/consumable/sugar = 1)
 	required_other = TRUE
 	required_container = /obj/item/slime_extract/green
 
