@@ -6570,6 +6570,11 @@
 	pixel_x = -23
 	},
 /obj/structure/table,
+/obj/item/gun/energy/e_gun/dragnet,
+/obj/item/gun/energy/e_gun/dragnet{
+	pixel_x = -4;
+	pixel_y = 4
+	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "akW" = (
@@ -7523,9 +7528,6 @@
 /obj/structure/bed/dogbed/cayenne{
 	name = "Lia's bed"
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 24
-	},
 /mob/living/simple_animal/hostile/carp/cayenne/lia,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/hos)
@@ -7698,11 +7700,11 @@
 /obj/structure/table,
 /obj/item/paper_bin,
 /obj/item/pen,
-/obj/machinery/computer/security/telescreen/entertainment{
-	pixel_y = -26
-	},
 /obj/structure/reagent_dispensers/peppertank{
-	pixel_x = 30
+	pixel_y = -30
+	},
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 24
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/hos)
@@ -19161,13 +19163,6 @@
 	},
 /area/maintenance/port)
 "aFh" = (
-/obj/machinery/recharger{
-	pixel_x = -7
-	},
-/obj/machinery/recharger{
-	pixel_x = 7
-	},
-/obj/structure/table,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -19179,6 +19174,8 @@
 	pixel_x = 24;
 	pixel_y = -6
 	},
+/obj/effect/turf_decal/box/red,
+/obj/machinery/porta_turret/ai,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "aFi" = (
@@ -35456,20 +35453,20 @@
 /turf/open/floor/plasteel/dark,
 /area/science/research)
 "bdK" = (
-/obj/structure/rack,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/obj/effect/turf_decal/bot,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/gun/energy/e_gun/dragnet{
-	pixel_x = -4;
-	pixel_y = 4
+/obj/structure/table,
+/obj/machinery/recharger{
+	pixel_x = -7
 	},
-/obj/item/gun/energy/e_gun/dragnet,
+/obj/machinery/recharger{
+	pixel_x = 7
+	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "bdL" = (
@@ -60194,6 +60191,7 @@
 	name = "Armoury";
 	req_access_txt = "3"
 	},
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "bPJ" = (
@@ -73059,6 +73057,7 @@
 	name = "Armoury";
 	req_access_txt = "58"
 	},
+/obj/effect/mapping_helpers/airlock/locked,
 /obj/machinery/door/poddoor/shutters{
 	id = "frontarmory";
 	name = "Front Armoury Shutter"
@@ -73068,6 +73067,12 @@
 	name = "Armoury Shutter Toggle";
 	pixel_y = 24;
 	req_access_txt = "58"
+	},
+/obj/machinery/turretid{
+	control_area = "/area/ai_monitored/security/armory";
+	icon_state = "control_stun";
+	name = "Armory turret control";
+	pixel_y = -24
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
@@ -77335,6 +77340,12 @@
 /obj/item/kirbyplants{
 	icon_state = "plant-21"
 	},
+/obj/machinery/turretid{
+	control_area = "/area/ai_monitored/security/armory";
+	icon_state = "control_stun";
+	name = "Armory turret control";
+	pixel_y = -24
+	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/brig)
 "crG" = (
@@ -78160,6 +78171,7 @@
 	name = "Armoury";
 	req_access_txt = "3"
 	},
+/obj/effect/mapping_helpers/airlock/locked,
 /obj/structure/cable,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)

@@ -3,6 +3,7 @@ GLOBAL_DATUM_INIT(keycard_events, /datum/events, new)
 #define KEYCARD_RED_ALERT "Red Alert"
 #define KEYCARD_EMERGENCY_MAINTENANCE_ACCESS "Emergency Maintenance Access"
 #define KEYCARD_BSA_UNLOCK "Bluespace Artillery Unlock"
+#define KEYCARD_ARMORY_ACCESS "Emergency Armory Access"
 
 /obj/machinery/keycard_auth
 	name = "Keycard Authentication Device"
@@ -47,6 +48,7 @@ GLOBAL_DATUM_INIT(keycard_events, /datum/events, new)
 	data["red_alert"] = (seclevel2num(get_security_level()) >= SEC_LEVEL_RED) ? 1 : 0
 	data["emergency_maint"] = GLOB.emergency_access
 	data["bsa_unlock"] = GLOB.bsa_unlock
+	data["armory_unlock"] = GLOB.armory_access
 	return data
 
 /obj/machinery/keycard_auth/ui_status(mob/user)
@@ -79,6 +81,10 @@ GLOBAL_DATUM_INIT(keycard_events, /datum/events, new)
 		if("bsa_unlock")
 			if(!event_source)
 				sendEvent(KEYCARD_BSA_UNLOCK)
+				. = TRUE
+		if("armory_unlock")
+			if(!event_source)
+				sendEvent(KEYCARD_ARMORY_ACCESS)
 				. = TRUE
 
 /obj/machinery/keycard_auth/proc/sendEvent(event_type)
@@ -118,6 +124,8 @@ GLOBAL_DATUM_INIT(keycard_events, /datum/events, new)
 			make_maint_all_access()
 		if(KEYCARD_BSA_UNLOCK)
 			toggle_bluespace_artillery()
+		if(KEYCARD_ARMORY_ACCESS)
+			unbolt_armory()
 
 GLOBAL_VAR_INIT(emergency_access, FALSE)
 /proc/make_maint_all_access()
@@ -136,6 +144,25 @@ GLOBAL_VAR_INIT(emergency_access, FALSE)
 			D.update_icon(0)
 	minor_announce("Access restrictions in maintenance areas have been restored.", "Attention! Station-wide emergency rescinded:")
 	GLOB.emergency_access = FALSE
+	SSblackbox.record_feedback("nested tally", "keycard_auths", 1, list("emergency maintenance access", "disabled"))
+
+GLOBAL_VAR_INIT(armory_access, FALSE)
+/proc/unbolt_armory()
+	for(var/area/ai_monitored/security/armory/A in world)
+		for(var/obj/machinery/door/airlock/D in A)
+			D.locked = FALSE
+			D.update_icon(0)
+	minor_announce("Access restrictions on the armory have been lessened.", "Attention! Station-wide emergency declared!",1)
+	GLOB.armory_access = TRUE
+	SSblackbox.record_feedback("nested tally", "keycard_auths", 1, list("emergency armory access", "enabled"))
+
+/proc/bolt_armory()
+	for(var/area/ai_monitored/security/armory/A in world)
+		for(var/obj/machinery/door/airlock/D in A)
+			D.locked = TRUE
+			D.update_icon(0)
+	minor_announce("Access restrictions on the armory have been restored.", "Attention! Station-wide emergency rescinded:")
+	GLOB.armory_access = FALSE
 	SSblackbox.record_feedback("nested tally", "keycard_auths", 1, list("emergency maintenance access", "disabled"))
 
 /proc/toggle_bluespace_artillery()
