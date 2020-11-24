@@ -1,7 +1,9 @@
 ###Files and folders specified here will never be tracked.
 
 #Ignore everything in datafolder and subdirectories
-/data/**/*
+/data/logs/*
+/data/npc_saves/*
+/data/spritesheets/*
 /tmp/**/*
 
 #Ignore byond config folder.
