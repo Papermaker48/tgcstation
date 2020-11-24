@@ -19175,7 +19175,7 @@
 	pixel_y = -6
 	},
 /obj/effect/turf_decal/box/red,
-/obj/machinery/porta_turret/ai,
+/obj/machinery/porta_turret,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "aFi" = (
