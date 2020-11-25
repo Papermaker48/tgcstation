@@ -36542,6 +36542,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/item/storage/toolbox/mechanical,
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
 "bfk" = (
@@ -37390,7 +37391,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/item/storage/toolbox/mechanical,
+/obj/structure/microscope,
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
 "bgy" = (
