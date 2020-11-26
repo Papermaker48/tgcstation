@@ -23,7 +23,7 @@
 	contained = 0
 	density = TRUE
 	energy = 0
-	dissipate = FALSE
+	dissipate = 1
 	dissipate_delay = 5
 	dissipate_strength = 1
 	var/list/orbiting_balls = list()
@@ -31,13 +31,12 @@
 	var/produced_power
 	var/energy_to_raise = 32
 	var/energy_to_lower = -20
-	var/list/shocked_things = list()
 
 /obj/singularity/energy_ball/Initialize(mapload, starting_energy = 50, is_miniball = FALSE)
 	miniball = is_miniball
 	. = ..()
 	if(!is_miniball)
-		set_light(10, 7, "#5e5edd")
+		set_light(10, 7, "#EEEEFF")
 
 /obj/singularity/energy_ball/ex_act(severity, target)
 	return
@@ -53,6 +52,7 @@
 	for(var/ball in orbiting_balls)
 		var/obj/singularity/energy_ball/EB = ball
 		QDEL_NULL(EB)
+
 	. = ..()
 
 /obj/singularity/energy_ball/admin_investigate_setup()
@@ -71,18 +71,16 @@
 
 		pixel_x = 0
 		pixel_y = 0
-		shocked_things.Cut()
-		tesla_zap(src, 3, TESLA_DEFAULT_POWER, shocked_targets = shocked_things)
+
+		tesla_zap(src, 7, TESLA_DEFAULT_POWER)
 
 		pixel_x = -32
 		pixel_y = -32
 		for (var/ball in orbiting_balls)
-			var/range = rand(1, clamp(orbiting_balls.len, 2, 3))
-			var/list/temp_shock = list()
-			tesla_zap(ball, range, TESLA_MINI_POWER/7*range, shocked_targets = temp_shock)
-			shocked_things += temp_shock
+			var/range = rand(1, clamp(orbiting_balls.len, 3, 7))
+			tesla_zap(ball, range, TESLA_MINI_POWER/7*range)
 	else
-		energy = 0 // ensure we dont have miniballs of miniballs //But it'll be cool broooooooooooooooo
+		energy = 0 // ensure we dont have miniballs of miniballs
 
 /obj/singularity/energy_ball/examine(mob/user)
 	. = ..()
@@ -90,13 +88,11 @@
 		. += "There are [orbiting_balls.len] mini-balls orbiting it."
 
 
-/obj/singularity/energy_ball/proc/move_the_basket_ball(move_amount)
-	var/list/dirs = GLOB.alldirs.Copy()
-	for(var/I in 1 to 30)
-		var/atom/real_thing = pick(shocked_things)
-		dirs += get_dir(src, real_thing) //Carry some momentum yeah? Just a bit tho
+/obj/singularity/energy_ball/proc/move_the_basket_ball(var/move_amount)
+	//we face the last thing we zapped, so this lets us favor that direction a bit
+	var/move_bias = pick(GLOB.alldirs)
 	for(var/i in 0 to move_amount)
-		var/move_dir = pick(dirs) //ensures teslas don't just sit around
+		var/move_dir = pick(GLOB.alldirs + move_bias) //ensures large-ball teslas don't just sit around
 		if(target && prob(10))
 			move_dir = get_dir(src,target)
 		var/turf/T = get_step(src, move_dir)
@@ -145,19 +141,14 @@
 /obj/singularity/energy_ball/Bumped(atom/movable/AM)
 	dust_mobs(AM)
 
-
 /obj/singularity/energy_ball/attack_tk(mob/user)
-	if(!iscarbon(user))
-		return
-	var/mob/living/carbon/jedi = user
-	to_chat(jedi, "<span class='userdanger'>That was a shockingly dumb idea.</span>")
-	var/obj/item/organ/brain/rip_u = locate(/obj/item/organ/brain) in jedi.internal_organs
-	jedi.ghostize(jedi)
-	if(rip_u)
+	if(iscarbon(user))
+		var/mob/living/carbon/C = user
+		to_chat(C, "<span class='userdanger'>That was a shockingly dumb idea.</span>")
+		var/obj/item/organ/brain/rip_u = locate(/obj/item/organ/brain) in C.internal_organs
+		C.ghostize(0)
 		qdel(rip_u)
-	jedi.death()
-	return COMPONENT_CANCEL_ATTACK_CHAIN
-
+		C.death()
 
 /obj/singularity/energy_ball/orbit(obj/singularity/energy_ball/target)
 	if (istype(target))
@@ -206,6 +197,13 @@
 										/obj/machinery/power/emitter,
 										/obj/machinery/field/generator,
 										/mob/living/simple_animal,
+										/obj/machinery/particle_accelerator/control_box,
+										/obj/structure/particle_accelerator/fuel_chamber,
+										/obj/structure/particle_accelerator/particle_emitter/center,
+										/obj/structure/particle_accelerator/particle_emitter/left,
+										/obj/structure/particle_accelerator/particle_emitter/right,
+										/obj/structure/particle_accelerator/power_box,
+										/obj/structure/particle_accelerator/end_cap,
 										/obj/machinery/field/containment,
 										/obj/structure/disposalpipe,
 										/obj/structure/disposaloutlet,

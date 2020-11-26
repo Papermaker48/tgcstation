@@ -40,6 +40,18 @@
 	reward = 10000
 	gas_type = /datum/gas/zauker
 
+/datum/bounty/item/engineering/energy_ball
+	name = "Contained Tesla Ball"
+	description = "Station 24 is being overrun by hordes of angry Mothpeople. They are requesting the ultimate bug zapper."
+	reward = 75000 //requires 14k credits of purchases, not to mention cooperation with engineering/heads of staff to set up inside the cramped shuttle
+	wanted_types = list(/obj/singularity/energy_ball)
+
+/datum/bounty/item/engineering/energy_ball/applies_to(obj/O)
+	if(!..())
+		return FALSE
+	var/obj/singularity/energy_ball/T = O
+	return !T.miniball
+
 /datum/bounty/item/engineering/emitter
 	name = "Emitter"
 	description = "We think there may be a defect in your station's emitter designs, based on the sheer number of delaminations your sector seems to see. Ship us one of yours."
