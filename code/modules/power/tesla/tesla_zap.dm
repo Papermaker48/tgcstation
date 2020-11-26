@@ -192,8 +192,6 @@
 /proc/tesla_zap(atom/source, zap_range = 3, power, zap_flags = ZAP_DEFAULT_FLAGS, list/shocked_targets = list())
 	if(QDELETED(source))
 		return
-	if(!(zap_flags & ZAP_ALLOW_DUPLICATES))
-		LAZYSET(shocked_targets, source, TRUE) //I don't want no null refs in my list yeah?
 	. = source.dir
 	if(power < 1000)
 		return
@@ -205,7 +203,6 @@
 	var/closest_type = 0
 	var/static/things_to_shock = typecacheof(list(/obj/machinery, /mob/living, /obj/structure, /obj/vehicle/ridden))
 	var/static/blacklisted_tesla_types = typecacheof(list(/obj/machinery/atmospherics,
-										/obj/machinery/portable_atmospherics,
 										/obj/machinery/power/emitter,
 										/obj/machinery/field/generator,
 										/mob/living/simple_animal,
@@ -307,11 +304,13 @@
 		return
 	//common stuff
 	source.Beam(closest_atom, icon_state="lightning[rand(1,12)]", time=5, maxdistance = INFINITY)
+	if(!(zap_flags & ZAP_ALLOW_DUPLICATES))
+		LAZYSET(shocked_targets, closest_atom, TRUE)
 	var/zapdir = get_dir(source, closest_atom)
 	if(zapdir)
 		. = zapdir
 
-	var/next_range = 2
+	var/next_range = 3
 	if(closest_type == COIL)
 		next_range = 5
 
