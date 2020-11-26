@@ -36,7 +36,7 @@
 	miniball = is_miniball
 	. = ..()
 	if(!is_miniball)
-		set_light(10, 7, "#EEEEFF")
+		set_light(10, 7, "#5e5edd")
 
 /obj/singularity/energy_ball/ex_act(severity, target)
 	return
@@ -52,7 +52,6 @@
 	for(var/ball in orbiting_balls)
 		var/obj/singularity/energy_ball/EB = ball
 		QDEL_NULL(EB)
-
 	. = ..()
 
 /obj/singularity/energy_ball/admin_investigate_setup()
@@ -80,7 +79,7 @@
 			var/range = rand(1, clamp(orbiting_balls.len, 3, 7))
 			tesla_zap(ball, range, TESLA_MINI_POWER/7*range)
 	else
-		energy = 0 // ensure we dont have miniballs of miniballs
+		energy = 0 // ensure we dont have miniballs of miniballs //But it'll be cool broooooooooooooooo
 
 /obj/singularity/energy_ball/examine(mob/user)
 	. = ..()
@@ -141,14 +140,19 @@
 /obj/singularity/energy_ball/Bumped(atom/movable/AM)
 	dust_mobs(AM)
 
+
 /obj/singularity/energy_ball/attack_tk(mob/user)
-	if(iscarbon(user))
-		var/mob/living/carbon/C = user
-		to_chat(C, "<span class='userdanger'>That was a shockingly dumb idea.</span>")
-		var/obj/item/organ/brain/rip_u = locate(/obj/item/organ/brain) in C.internal_organs
-		C.ghostize(0)
+	if(!iscarbon(user))
+		return
+	var/mob/living/carbon/jedi = user
+	to_chat(jedi, "<span class='userdanger'>That was a shockingly dumb idea.</span>")
+	var/obj/item/organ/brain/rip_u = locate(/obj/item/organ/brain) in jedi.internal_organs
+	jedi.ghostize(jedi)
+	if(rip_u)
 		qdel(rip_u)
-		C.death()
+	jedi.death()
+	return COMPONENT_CANCEL_ATTACK_CHAIN
+
 
 /obj/singularity/energy_ball/orbit(obj/singularity/energy_ball/target)
 	if (istype(target))
