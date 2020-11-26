@@ -22,11 +22,12 @@ map deltastation
 endmap
 
 map kilostation
+	default
 	votable
 endmap
 
 map gcstation
-	default
+	#default
 	votable
 endmap
 

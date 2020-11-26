@@ -60192,7 +60192,6 @@
 	name = "Armoury";
 	req_access_txt = "3"
 	},
-/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "bPJ" = (
@@ -73050,7 +73049,6 @@
 	name = "Armoury";
 	req_access_txt = "58"
 	},
-/obj/effect/mapping_helpers/airlock/locked,
 /obj/machinery/door/poddoor/shutters{
 	id = "frontarmory";
 	name = "Front Armoury Shutter"
@@ -78132,7 +78130,6 @@
 	name = "Armoury";
 	req_access_txt = "3"
 	},
-/obj/effect/mapping_helpers/airlock/locked,
 /obj/structure/cable,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
@@ -90860,6 +90857,11 @@
 /obj/structure/sign/warning/fire,
 /turf/closed/wall,
 /area/maintenance/port/aft)
+"hZe" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plating/airless,
+/area/space/nearstation)
 "iiz" = (
 /obj/effect/turf_decal/loading_area{
 	dir = 4
@@ -91144,7 +91146,7 @@
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port)
 "kta" = (
-/obj/effect/turf_decal/loading_area,
+/obj/effect/turf_decal/delivery,
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
 "kyd" = (
@@ -91253,6 +91255,11 @@
 /obj/structure/grille,
 /turf/closed/wall/r_wall,
 /area/space/nearstation)
+"lcs" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plasteel/dark,
+/area/engine/engineering)
 "lda" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
@@ -91400,6 +91407,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/disposal)
+"mAQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/loading_area,
+/turf/open/floor/plasteel/dark,
+/area/engine/engineering)
 "mGQ" = (
 /obj/structure/sign/departments/security,
 /turf/closed/wall/rust,
@@ -91516,6 +91528,10 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+/turf/open/floor/plasteel/dark,
+/area/engine/engineering)
+"nTB" = (
+/obj/effect/turf_decal/loading_area,
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering)
 "nWn" = (
@@ -128171,8 +128187,8 @@ haG
 vsp
 oxs
 dGU
-haG
-oxs
+dSG
+mAQ
 axW
 acm
 acm
@@ -128434,7 +128450,7 @@ axW
 acm
 acK
 kta
-aod
+hZe
 acK
 acK
 acK
@@ -128685,8 +128701,8 @@ haG
 oxs
 haG
 wbL
-oxs
-haG
+lcs
+nTB
 axW
 acm
 acm
