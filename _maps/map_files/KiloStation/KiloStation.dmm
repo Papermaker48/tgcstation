@@ -30758,16 +30758,14 @@
 /turf/open/floor/engine,
 /area/science/xenobiology)
 "aWK" = (
-/obj/structure/table/reinforced,
 /obj/effect/turf_decal/delivery,
-/obj/machinery/door/firedoor,
-/obj/item/folder/red,
-/obj/item/pen,
-/obj/machinery/door/window/brigdoor/westright{
-	name = "Armoury Desk";
+/obj/effect/mapping_helpers/airlock/locked,
+/obj/machinery/door/airlock/security{
+	id_tag = "armorybolts";
+	name = "Armoury";
 	req_access_txt = "3"
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "aWL" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -49713,6 +49711,14 @@
 	icon_state = "plant-02";
 	pixel_y = 3
 	},
+/obj/machinery/button/door{
+	id = "armorybolts";
+	name = "Armory Lock";
+	normaldoorcontrol = 1;
+	pixel_y = -24;
+	req_access_txt = "58";
+	specialfunctions = 4
+	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/brig)
 "bzy" = (
@@ -60189,7 +60195,9 @@
 /obj/effect/turf_decal/delivery,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/effect/mapping_helpers/airlock/locked,
 /obj/machinery/door/airlock/security{
+	id_tag = "armorybolts";
 	name = "Armoury";
 	req_access_txt = "3"
 	},
@@ -73058,6 +73066,7 @@
 /obj/machinery/button/door{
 	id = "frontarmory";
 	name = "Armoury Shutter Toggle";
+	pixel_x = -6;
 	pixel_y = 24;
 	req_access_txt = "58"
 	},
@@ -73066,6 +73075,15 @@
 	icon_state = "control_stun";
 	name = "Armory turret control";
 	pixel_y = -24
+	},
+/obj/machinery/button/door{
+	id = "armorybolts";
+	name = "Armory Lock";
+	normaldoorcontrol = 1;
+	pixel_x = 6;
+	pixel_y = 24;
+	req_access_txt = "58";
+	specialfunctions = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
@@ -78129,10 +78147,12 @@
 "csX" = (
 /obj/effect/turf_decal/delivery,
 /obj/machinery/door/airlock/security{
+	id_tag = "armorybolts";
 	name = "Armoury";
 	req_access_txt = "3"
 	},
 /obj/structure/cable,
+/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "csY" = (
