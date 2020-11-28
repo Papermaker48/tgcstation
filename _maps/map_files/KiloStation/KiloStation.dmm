@@ -24446,11 +24446,22 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/effect/turf_decal/bot,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
-/obj/machinery/rnd/bepis,
+/obj/structure/table,
+/obj/item/paper_bin{
+	pixel_x = -4;
+	pixel_y = 4
+	},
+/obj/item/toy/figure/rd{
+	pixel_x = 8;
+	pixel_y = 8
+	},
+/obj/item/stamp/rd{
+	pixel_x = 8
+	},
+/obj/item/pen,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/hor)
 "aNB" = (
@@ -30917,19 +30928,14 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral,
-/obj/item/paper_bin{
-	pixel_x = -4;
-	pixel_y = 4
-	},
-/obj/item/toy/figure/rd{
-	pixel_x = 8;
-	pixel_y = 8
-	},
-/obj/item/stamp/rd{
-	pixel_x = 8
-	},
-/obj/item/pen,
 /obj/effect/turf_decal/stripes/corner,
+/obj/machinery/computer/security/telescreen{
+	desc = "Used for monitoring the singularity.";
+	dir = 8;
+	name = "Singularity Engine Telescreen";
+	network = list("singularity");
+	pixel_y = 3
+	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/hor)
 "aXa" = (
@@ -32327,12 +32333,12 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/storage)
 "aZg" = (
-/obj/structure/filingcabinet/chestdrawer,
 /obj/effect/turf_decal/bot,
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
+/obj/machinery/rnd/bepis,
 /turf/open/floor/plasteel/dark,
 /area/science/lab)
 "aZh" = (
@@ -83416,12 +83422,12 @@
 /turf/open/floor/plasteel,
 /area/engine/break_room)
 "cBT" = (
-/obj/machinery/door/poddoor/shutters/preopen{
+/obj/effect/turf_decal/caution/stand_clear,
+/obj/structure/cable/layer1,
+/obj/machinery/door/poddoor/shutters/radiation/preopen{
 	id = "engsm";
 	name = "Radiation Chamber Shutters"
 	},
-/obj/effect/turf_decal/caution/stand_clear,
-/obj/structure/cable/layer1,
 /turf/open/floor/plasteel/dark,
 /area/engine/supermatter)
 "cBU" = (
@@ -83598,11 +83604,11 @@
 /turf/open/floor/plasteel/dark,
 /area/hallway/secondary/entry)
 "cCl" = (
-/obj/machinery/door/poddoor/shutters/preopen{
+/obj/effect/turf_decal/caution/stand_clear,
+/obj/machinery/door/poddoor/shutters/radiation/preopen{
 	id = "engsm";
 	name = "Radiation Chamber Shutters"
 	},
-/obj/effect/turf_decal/caution/stand_clear,
 /turf/open/floor/plasteel/dark,
 /area/engine/supermatter)
 "cCm" = (
@@ -90851,9 +90857,6 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/medical/chemistry)
 "gQH" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
 /obj/structure/cable,
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
@@ -90862,7 +90865,18 @@
 	req_access_txt = "10"
 	},
 /obj/structure/cable/layer1,
-/turf/open/floor/engine,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "engpa";
+	name = "Accelerator Room Shutters"
+	},
+/obj/effect/turf_decal/caution/stand_clear,
+/obj/machinery/button/door{
+	id = "engpa";
+	name = "Security Shutters Toggle";
+	pixel_x = -24;
+	req_access_txt = "56"
+	},
+/turf/open/floor/plasteel/dark,
 /area/engine/engineering)
 "gTr" = (
 /obj/effect/turf_decal/stripes/line,
@@ -91008,12 +91022,12 @@
 "iwW" = (
 /obj/machinery/door/poddoor{
 	id = "Singulo Storage";
-	name = "Secure Storage"
+	name = "Singulo Storage"
 	},
 /obj/machinery/button/door{
 	desc = "A remote control-switch for secure storage.";
 	id = "Singulo Storage";
-	name = "Secure Storage Toggle";
+	name = "Singulo Storage Toggle";
 	pixel_y = 24;
 	req_access_txt = "11"
 	},
@@ -92257,6 +92271,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/maintenance/port)
+"tah" = (
+/obj/effect/spawner/structure/window/plasma/reinforced,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "engpa";
+	name = "Accelerator Room Shutters"
+	},
+/turf/open/floor/plating,
+/area/engine/engineering)
 "teW" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -92399,14 +92421,22 @@
 	name = "Accelerator Room";
 	req_access_txt = "10"
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
 /obj/structure/cable,
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/structure/cable/layer1,
-/turf/open/floor/engine,
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "engpa";
+	name = "Accelerator Room Shutters"
+	},
+/obj/effect/turf_decal/caution/stand_clear,
+/obj/machinery/button/door{
+	id = "engpa";
+	name = "Security Shutters Toggle";
+	pixel_x = 24;
+	req_access_txt = "56"
+	},
+/turf/open/floor/plasteel/dark,
 /area/engine/engineering)
 "ueQ" = (
 /obj/effect/turf_decal/stripes/line{
@@ -92537,7 +92567,7 @@
 "viR" = (
 /obj/machinery/door/poddoor{
 	id = "Singulo Storage";
-	name = "Secure Storage"
+	name = "Singulo Storage"
 	},
 /turf/open/floor/plating,
 /area/engine/engineering)
@@ -128069,7 +128099,7 @@ aBx
 aAM
 aAY
 azw
-axW
+tah
 azw
 cYF
 azw
@@ -129097,7 +129127,7 @@ aBx
 aAM
 aBb
 cmx
-axW
+tah
 cmx
 cmx
 cmx
