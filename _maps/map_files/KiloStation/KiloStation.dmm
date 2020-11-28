@@ -13995,8 +13995,16 @@
 	pixel_x = -6;
 	pixel_y = 4
 	},
+/obj/item/folder/blue{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/item/folder/yellow,
 /obj/item/folder,
 /obj/item/stamp/ce,
+/obj/item/lighter{
+	pixel_x = -9
+	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/heads/chief)
 "awA" = (
@@ -14358,14 +14366,16 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/item/folder/blue{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/folder/yellow,
-/obj/item/lighter,
-/obj/item/clothing/mask/cigarette/cigar/cohiba,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
+/obj/machinery/computer/security/telescreen{
+	desc = "Used for monitoring the singularity.";
+	dir = 1;
+	name = "Singularity Engine Telescreen";
+	network = list("singularity")
+	},
+/obj/item/clothing/mask/cigarette/cigar/cohiba{
+	pixel_x = 11
+	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/heads/chief)
 "axi" = (
@@ -90465,6 +90475,9 @@
 	},
 /obj/structure/cable,
 /obj/structure/cable/layer1,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
 /turf/open/floor/plating,
 /area/engine/engineering)
 "dft" = (
@@ -91604,6 +91617,7 @@
 	req_access_txt = "10"
 	},
 /obj/structure/cable/layer1,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /turf/open/floor/plating,
 /area/engine/engineering)
 "nNX" = (
@@ -91998,7 +92012,7 @@
 "qMo" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/particle_accelerator/end_cap,
-/obj/machinery/camera/emp_proof{
+/obj/machinery/camera/emp_proof/motion{
 	c_tag = "Particle Accelerator";
 	network = list("singularity")
 	},
