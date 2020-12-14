@@ -15902,7 +15902,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable,
 /turf/open/floor/plasteel,
-/area/maintenance/starboard/fore)
+/area/science/robotics/mechbay)
 "azI" = (
 /obj/effect/turf_decal/loading_area,
 /obj/effect/turf_decal/tile/purple{
@@ -77353,6 +77353,9 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/status_display/evac{
+	pixel_x = -32
+	},
 /turf/open/floor/plating{
 	icon_state = "platingdmg1"
 	},
@@ -77815,9 +77818,6 @@
 /area/maintenance/disposal)
 "csv" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/status_display/evac{
-	pixel_x = -32
-	},
 /obj/effect/decal/cleanable/blood/old,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/effect/landmark/xeno_spawn,
