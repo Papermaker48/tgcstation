@@ -2,14 +2,6 @@
 #define DEEPFRYER_COOKTIME 60
 #define DEEPFRYER_BURNTIME 120
 
-GLOBAL_LIST_INIT(oilfry_blacklisted_items, typecacheof(list(
-	/obj/item/reagent_containers/glass,
-	/obj/item/reagent_containers/syringe,
-	/obj/item/reagent_containers/food/condiment,
-	/obj/item/storage,
-	/obj/item/small_delivery,
-	/obj/item/his_grace)))
-
 /obj/machinery/deepfryer
 	name = "deep fryer"
 	desc = "Deep fried <i>everything</i>."
@@ -26,14 +18,20 @@ GLOBAL_LIST_INIT(oilfry_blacklisted_items, typecacheof(list(
 	var/fry_speed = 1 //How quickly we fry food
 	var/frying_fried //If the object has been fried; used for messages
 	var/frying_burnt //If the object has been burnt
-	var/datum/looping_sound/deep_fryer/fry_loop
 	var/static/list/deepfry_blacklisted_items = typecacheof(list(
-	/obj/item/screwdriver,
-	/obj/item/crowbar,
-	/obj/item/wrench,
-	/obj/item/wirecutters,
-	/obj/item/multitool,
-	/obj/item/weldingtool))
+		/obj/item/screwdriver,
+		/obj/item/crowbar,
+		/obj/item/wrench,
+		/obj/item/wirecutters,
+		/obj/item/multitool,
+		/obj/item/weldingtool,
+		/obj/item/reagent_containers/glass,
+		/obj/item/reagent_containers/syringe,
+		/obj/item/reagent_containers/food/condiment,
+		/obj/item/storage,
+		/obj/item/small_delivery,
+		/obj/item/his_grace))
+	var/datum/looping_sound/deep_fryer/fry_loop
 
 /obj/machinery/deepfryer/Initialize()
 	. = ..()
@@ -78,7 +76,7 @@ GLOBAL_LIST_INIT(oilfry_blacklisted_items, typecacheof(list(
 	else if(default_deconstruction_screwdriver(user, "fryer_off", "fryer_off" ,I))	//where's the open maint panel icon?!
 		return
 	else
-		if(is_type_in_typecache(I, deepfry_blacklisted_items) || is_type_in_typecache(I, GLOB.oilfry_blacklisted_items) || HAS_TRAIT(I, TRAIT_NODROP) || (I.item_flags & (ABSTRACT | DROPDEL)))
+		if(is_type_in_typecache(I, deepfry_blacklisted_items) || HAS_TRAIT(I, TRAIT_NODROP) || (I.item_flags & (ABSTRACT | DROPDEL)))
 			return ..()
 		else if(!frying && user.transferItemToLoc(I, src))
 			to_chat(user, "<span class='notice'>You put [I] into [src].</span>")
