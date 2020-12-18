@@ -20,6 +20,16 @@
 /obj/item/ammo_casing/energy/laser/hos
 	e_cost = 120
 
+/obj/item/ammo_casing/energy/laser/shotgun
+	projectile_type = /obj/projectile/beam/laser/shotgun
+	e_cost = 200
+	fire_sound = 'sound/weapons/pulse3.ogg'
+	pellets = 5
+	variance = 25
+
+/obj/item/ammo_casing/energy/laser/shotgun/hos
+	e_cost = 250
+
 /obj/item/ammo_casing/energy/laser/practice
 	projectile_type = /obj/projectile/beam/practice
 	select_name = "practice"

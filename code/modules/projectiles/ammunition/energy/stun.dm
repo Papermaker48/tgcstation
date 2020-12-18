@@ -22,14 +22,15 @@
 	fire_sound = 'sound/weapons/taser2.ogg'
 	harmful = FALSE
 
-/obj/item/ammo_casing/energy/disabler/shotgun
-	projectile_type = /obj/projectile/beam/disabler/shotgun
-	select_name  = "disable"
-	e_cost = 200
-	fire_sound = 'sound/weapons/pulse3.ogg'
-	pellets = 5
-	variance = 20
-	harmful = FALSE
-
 /obj/item/ammo_casing/energy/disabler/hos
 	e_cost = 60
+
+/obj/item/ammo_casing/energy/disabler/shotgun
+	projectile_type = /obj/projectile/beam/disabler/shotgun
+	e_cost = 200
+	fire_sound = 'sound/weapons/laser3.ogg'
+	pellets = 6
+	variance = 30
+
+/obj/item/ammo_casing/energy/disabler/shotgun/hos
+	e_cost = 250

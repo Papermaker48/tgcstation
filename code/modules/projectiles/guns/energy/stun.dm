@@ -43,7 +43,7 @@
 
 /obj/item/gun/energy/disabler/shotgun
 	name = "scatter disabler"
-	desc = "A self-defense weapon that exhausts organic targets, weakening them until they collapse."
+	desc = "This weapon uses experimental bluespace technology to exhaust organic targets instantaneously at short range, at a high power cost."
 	icon_state = "disabler"
 	inhand_icon_state = null
 	ammo_type = list(/obj/item/ammo_casing/energy/disabler/shotgun)
@@ -51,6 +51,7 @@
 	can_flashlight = TRUE
 	flight_x_offset = 15
 	flight_y_offset = 10
+	dual_wield_spread = 30
 
 /obj/item/gun/energy/disabler/cyborg
 	name = "cyborg disabler"

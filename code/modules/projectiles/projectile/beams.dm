@@ -27,6 +27,11 @@
 	wound_bonus = -30
 	bare_wound_bonus = 40
 
+/obj/projectile/beam/laser/shotgun
+	name = "laser pellet"
+	damage = 5
+	hitscan = TRUE
+
 //overclocked laser, does a bit more damage but has much higher wound power (-0 vs -20)
 /obj/projectile/beam/laser/hellfire
 	name = "hellfire laser"
@@ -68,7 +73,7 @@
 /obj/projectile/beam/scatter
 	name = "laser pellet"
 	icon_state = "scatterlaser"
-	damage = 5
+	damage = 6
 
 /obj/projectile/beam/xray
 	name = "\improper X-ray beam"
@@ -101,18 +106,9 @@
 
 /obj/projectile/beam/disabler/shotgun
 	name = "disabler pellet"
-	icon_state = "omnilaser"
-	damage = 10
-	damage_type = STAMINA
-	flag = ENERGY
+	damage = 8
 	hitscan = TRUE
-	hitsound = 'sound/weapons/tap.ogg'
-	eyeblur = 0
-	impact_effect_type = /obj/effect/temp_visual/impact_effect/blue_laser
-	light_color = LIGHT_COLOR_BLUE
-	tracer_type = /obj/effect/projectile/tracer/disabler
-	muzzle_type = /obj/effect/projectile/muzzle/disabler
-	impact_type = /obj/effect/projectile/impact/disabler
+	eyeblur = 1
 
 /obj/projectile/beam/pulse
 	name = "pulse"

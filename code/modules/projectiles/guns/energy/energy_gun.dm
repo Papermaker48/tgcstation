@@ -61,6 +61,13 @@
 	ammo_x_offset = 4
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 
+/obj/item/gun/energy/e_gun/hos/shotgun
+	name = "\improper Z-01 MultiPhase Energy Shotgun"
+	desc = "An expensive, modern adaptation of an expensive, modern recreation. This gun has several unique firemodes and improved firepower, but lacks range."
+	icon_state = "hoslaser"
+	ammo_type = list(/obj/item/ammo_casing/energy/disabler/shotgun/hos, /obj/item/ammo_casing/energy/laser/shotgun/hos, /obj/item/ammo_casing/energy/ion/hos)
+	ammo_x_offset = 2
+
 /obj/item/gun/energy/e_gun/dragnet
 	name = "\improper DRAGnet"
 	desc = "The \"Dynamic Rapid-Apprehension of the Guilty\" net is a revolution in law enforcement technology."
