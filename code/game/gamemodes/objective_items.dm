@@ -32,8 +32,8 @@
 	excludefromjob = list("Captain")
 
 /datum/objective_item/steal/hoslaser
-	name = "the head of security's personal laser gun."
-	targetitem = /obj/item/gun/energy/e_gun/hos
+	name = "the head of security's experimental laser shotgun."
+	targetitem = /obj/item/gun/energy/e_gun/hos/shotgun
 	difficulty = 10
 	excludefromjob = list("Head Of Security")
 
