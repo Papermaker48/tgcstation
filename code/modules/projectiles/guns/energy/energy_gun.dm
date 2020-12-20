@@ -54,7 +54,7 @@
 	name = "\improper X-01 MultiPhase Energy Gun"
 	desc = "This is an expensive, modern recreation of an antique laser gun. This gun has several unique firemodes, but lacks the ability to recharge over time."
 	cell_type = /obj/item/stock_parts/cell/hos_gun
-	icon_state = "hoslasershotgun"
+	icon_state = "hoslaser"
 	w_class = WEIGHT_CLASS_BULKY
 	force = 10
 	ammo_type = list(/obj/item/ammo_casing/energy/disabler/hos, /obj/item/ammo_casing/energy/laser/hos, /obj/item/ammo_casing/energy/ion/hos)
@@ -64,7 +64,7 @@
 /obj/item/gun/energy/e_gun/hos/shotgun
 	name = "\improper Z-01 MultiPhase Energy Shotgun"
 	desc = "An expensive, modern adaptation of an expensive, modern recreation. This gun has several unique firemodes and improved firepower, but lacks range."
-	icon_state = "hoslaser"
+	icon_state = "hoslasershotgun"
 	ammo_type = list(/obj/item/ammo_casing/energy/disabler/shotgun/hos, /obj/item/ammo_casing/energy/laser/shotgun/hos, /obj/item/ammo_casing/energy/ion/hos)
 	ammo_x_offset = 2
 
