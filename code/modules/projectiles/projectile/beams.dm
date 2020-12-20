@@ -109,6 +109,7 @@
 	damage = 8
 	hitscan = TRUE
 	eyeblur = 1
+	wound_bonus = -100
 
 /obj/projectile/beam/pulse
 	name = "pulse"

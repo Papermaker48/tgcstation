@@ -25,7 +25,7 @@
 	e_cost = 200
 	fire_sound = 'sound/weapons/pulse3.ogg'
 	pellets = 5
-	variance = 25
+	variance = 35
 
 /obj/item/ammo_casing/energy/laser/shotgun/hos
 	e_cost = 250

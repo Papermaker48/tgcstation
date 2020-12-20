@@ -30,7 +30,8 @@
 	e_cost = 200
 	fire_sound = 'sound/weapons/laser3.ogg'
 	pellets = 6
-	variance = 30
+	variance = 45
+	harmful = FALSE
 
 /obj/item/ammo_casing/energy/disabler/shotgun/hos
 	e_cost = 250
