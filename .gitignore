@@ -198,6 +198,8 @@ Temporary Items
 #Visual studio stuff
 *.vscode/*
 !/.vscode/extensions.json
+.vs/VSWorkspaceState.json
+.vs/slnx.sqlite
 tools/MapAtmosFixer/MapAtmosFixer/obj/*
 tools/MapAtmosFixer/MapAtmosFixer/bin/*
 tools/CreditsTool/bin/*
