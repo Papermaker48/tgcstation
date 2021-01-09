@@ -20,7 +20,7 @@
  *
  * make sure you add an update to the schema_version stable in the db changelog
  */
-#define DB_MINOR_VERSION 11
+#define DB_MINOR_VERSION 12
 
 
 //! ## Timing subsystem
@@ -232,10 +232,12 @@
 #define SSAIR_PIPENETS 1
 #define SSAIR_ATMOSMACHINERY 2
 #define SSAIR_ACTIVETURFS 3
-#define SSAIR_EXCITEDGROUPS 4
-#define SSAIR_HIGHPRESSURE 5
-#define SSAIR_HOTSPOTS 6
-#define SSAIR_SUPERCONDUCTIVITY 7
+#define SSAIR_EXCITEDCLEANUP 4
+#define SSAIR_EXCITEDGROUPS 5
+#define SSAIR_HIGHPRESSURE 6
+#define SSAIR_HOTSPOTS 7
+#define SSAIR_SUPERCONDUCTIVITY 8
+#define SSAIR_PROCESS_ATOMS 9
 
 // Explosion Subsystem subtasks
 #define SSEXPLOSIONS_MOVABLES 1
