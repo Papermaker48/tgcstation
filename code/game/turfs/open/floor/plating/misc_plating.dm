@@ -215,12 +215,6 @@
 	smoothing_groups = list(SMOOTH_GROUP_TURF_OPEN, SMOOTH_GROUP_FLOOR_ICE)
 	canSmoothWith = list(SMOOTH_GROUP_FLOOR_ICE)
 
-/turf/open/floor/plating/ice/colder
-	temperature = 140
-
-/turf/open/floor/plating/ice/temperate
-	temperature = 255.37
-
 /turf/open/floor/plating/ice/break_tile()
 	return
 
@@ -260,9 +254,6 @@
 	canSmoothWith = list(SMOOTH_GROUP_FLOOR_SNOWED)
 	planetary_atmos = TRUE
 
-/turf/open/floor/plating/snowed/colder
-	temperature = 140
-
 /turf/open/floor/plating/snowed/temperatre
 	temperature = 255.37
 
@@ -274,6 +265,8 @@
 	desc = "A patch of grass."
 	icon_state = "grass0"
 	base_icon_state = "grass"
+	baseturfs = /turf/open/floor/plating/sandy_dirt
+	broken_states = list("damaged")
 	bullet_bounce_sound = null
 	footstep = FOOTSTEP_GRASS
 	barefootstep = FOOTSTEP_GRASS
@@ -301,6 +294,7 @@
 	name = "dirt"
 	desc = "Upon closer examination, it's still dirt."
 	icon_state = "sand"
+	broken_states = list("sand_damaged")
 	bullet_bounce_sound = null
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND

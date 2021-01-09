@@ -446,7 +446,7 @@
 			M.gib()
 		else
 			M.vomit(blood = TRUE, stun = TRUE) //not having a redo of itching powder (hopefully)
-	new /mob/living/carbon/monkey(location, TRUE)
+	new /mob/living/carbon/human/species/monkey(location, TRUE)
 
 //water electrolysis
 /datum/chemical_reaction/electrolysis
@@ -523,13 +523,13 @@
 /datum/chemical_reaction/yuck
 	results = list(/datum/reagent/yuck = 4)
 	required_reagents = list(/datum/reagent/fuel = 3)
-	required_container = /obj/item/reagent_containers/food/snacks/deadmouse
+	required_container = /obj/item/food/deadmouse
 
 
 /datum/chemical_reaction/slimejelly
 	results = list(/datum/reagent/toxin/slimejelly = 5)
 	required_reagents = list(/datum/reagent/fuel/oil = 3, /datum/reagent/uranium/radium = 2, /datum/reagent/consumable/tinlux =1)
-	required_container = /obj/item/reagent_containers/food/snacks/grown/mushroom/glowshroom
+	required_container = /obj/item/food/grown/mushroom/glowshroom
 	mix_message = "The mushroom's insides bubble and pop and it becomes very limp."
 
 /datum/chemical_reaction/slime_extractification
@@ -581,10 +581,6 @@
 	results = list(/datum/reagent/water/holywater = 1)
 	required_reagents = list(/datum/reagent/water/hollowwater = 1)
 	required_catalysts = list(/datum/reagent/water/holywater = 1)
-
-/datum/chemical_reaction/gravy
-	results = list(/datum/reagent/consumable/gravy = 3)
-	required_reagents = list(/datum/reagent/consumable/milk = 1, /datum/reagent/consumable/nutriment = 1, /datum/reagent/consumable/flour = 1)
 
 /datum/chemical_reaction/exotic_stabilizer
 	results = list(/datum/reagent/exotic_stabilizer = 2)

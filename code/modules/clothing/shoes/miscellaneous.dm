@@ -78,7 +78,7 @@
 	resistance_flags = NONE
 	armor = list(MELEE = 0, BULLET = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 40, ACID = 75)
 	can_be_bloody = FALSE
-	custom_price = 600
+	custom_price = PAYCHECK_EASY * 3
 	can_be_tied = FALSE
 
 /obj/item/clothing/shoes/galoshes/dry
@@ -99,6 +99,7 @@
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/shoes/clown
 	var/enabled_waddle = TRUE
 	lace_time = 20 SECONDS // how the hell do these laces even work??
+	species_exception = list(/datum/species/golem/bananium)
 
 /obj/item/clothing/shoes/clown_shoes/Initialize()
 	. = ..()
@@ -186,6 +187,7 @@
 	equip_delay_other = 40
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/shoes
 	lace_time = 8 SECONDS
+	species_exception = list(/datum/species/golem/uranium)
 
 /obj/item/clothing/shoes/workboots/mining
 	name = "mining boots"
@@ -362,8 +364,8 @@
 	worn_icon_state = "rollerskates"
 	slowdown = SHOES_SLOWDOWN+1
 	wheels = /obj/vehicle/ridden/scooter/skateboard/wheelys/rollerskates
-	custom_premium_price = 300
-	custom_price = 300
+	custom_premium_price = PAYCHECK_EASY * 5
+	custom_price = PAYCHECK_EASY * 5
 
 /obj/item/clothing/shoes/wheelys/skishoes
 	name = "ski shoes"
@@ -372,9 +374,8 @@
 	worn_icon_state = "skishoes"
 	slowdown = SHOES_SLOWDOWN+1
 	wheels = /obj/vehicle/ridden/scooter/skateboard/wheelys/skishoes
-	custom_premium_price = 100
-	custom_price = 100
-
+	custom_premium_price = PAYCHECK_EASY * 1.6
+	custom_price = PAYCHECK_EASY * 1.6
 
 /obj/item/clothing/shoes/kindle_kicks
 	name = "Kindle Kicks"
@@ -422,7 +423,7 @@
 	icon_state = "cowboy_brown"
 	permeability_coefficient = 0.05 //these are quite tall
 	pocket_storage_component_path = /datum/component/storage/concrete/pockets/shoes
-	custom_price = 60
+	custom_price = PAYCHECK_EASY
 	var/list/occupants = list()
 	var/max_occupants = 4
 	can_be_tied = FALSE
