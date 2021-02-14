@@ -236,6 +236,9 @@ tools/LinuxOneShot/TGS_Config
 tools/LinuxOneShot/TGS_Instances
 tools/LinuxOneShot/TGS_Logs
 
+# Common build tooling
+!/tools/build
+
 #vs shit
 .vs/VSWorkspaceState.json
 .vs/slnx.sqlite
