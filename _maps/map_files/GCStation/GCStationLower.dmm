@@ -1,10 +1,4 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"ag" = (
-/obj/effect/turf_decal/tile/red{
-	dir = 1
-	},
-/turf/open/floor/iron/dark,
-/area/security/brig)
 "aw" = (
 /obj/effect/landmark/start/medical_doctor,
 /turf/open/floor/iron/cafeteria,
@@ -39,6 +33,15 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/white,
 /area/medical/surgery)
+"aX" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/turf/open/floor/iron/dark,
+/area/space)
 "bd" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
@@ -79,6 +82,9 @@
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 6
 	},
+/obj/structure/railing/corner{
+	dir = 1
+	},
 /turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "bG" = (
@@ -112,9 +118,6 @@
 /turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "bS" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -122,6 +125,9 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 1
+	},
 /turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "bT" = (
@@ -136,12 +142,16 @@
 /area/medical/cryo)
 "bV" = (
 /obj/structure/stairs/north,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/neutral,
 /turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
+"bW" = (
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/iron/dark,
+/area/space)
 "bX" = (
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 6
@@ -318,6 +328,9 @@
 	},
 /turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai_upload)
+"dS" = (
+/turf/open/floor/iron/dark,
+/area/space)
 "ec" = (
 /obj/structure/ladder,
 /turf/open/floor/plating,
@@ -438,7 +451,10 @@
 /area/command/teleporter)
 "gw" = (
 /obj/structure/stairs/north,
-/turf/open/floor/iron/dark,
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "gx" = (
 /obj/machinery/status_display/evac{
@@ -620,6 +636,18 @@
 	dir = 1
 	},
 /area/space)
+"jb" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/structure/railing/corner{
+	dir = 4
+	},
+/turf/open/floor/iron/dark,
+/area/security/brig)
 "ji" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/stripes/line{
@@ -673,6 +701,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
+/obj/effect/turf_decal/bot,
 /turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "jY" = (
@@ -868,6 +897,15 @@
 	},
 /turf/open/floor/iron/dark,
 /area/tcommsat/server)
+"nc" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/space)
 "nf" = (
 /obj/machinery/telecomms/server/presets/service,
 /obj/effect/turf_decal/bot,
@@ -993,9 +1031,6 @@
 /turf/closed/wall,
 /area/medical/surgery)
 "oX" = (
-/obj/effect/turf_decal/stripes/corner{
-	dir = 1
-	},
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
@@ -1088,6 +1123,13 @@
 	},
 /turf/open/floor/iron/freezer,
 /area/medical/medbay/central)
+"qH" = (
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/turf/open/floor/iron/dark,
+/area/space)
 "qM" = (
 /turf/open/floor/engine,
 /area/ai_monitored/turret_protected/ai_upload)
@@ -1148,6 +1190,9 @@
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
+	},
+/obj/structure/railing/corner{
+	dir = 4
 	},
 /turf/open/floor/iron/freezer,
 /area/medical/cryo)
@@ -1304,6 +1349,11 @@
 /obj/effect/turf_decal/stripes/corner,
 /turf/open/floor/iron/freezer,
 /area/medical/chemistry)
+"vr" = (
+/obj/structure/stairs/west,
+/obj/structure/railing,
+/turf/open/floor/iron/dark,
+/area/security/brig)
 "vs" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
@@ -1376,6 +1426,10 @@
 /obj/structure/flora/grass/jungle/b,
 /turf/open/floor/grass,
 /area/medical/break_room)
+"wq" = (
+/obj/structure/sign/warning/securearea,
+/turf/closed/wall/r_wall,
+/area/ai_monitored/security/armory)
 "wE" = (
 /obj/effect/spawner/structure/window/reinforced/tinted,
 /turf/open/floor/plating,
@@ -1422,6 +1476,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
+/obj/effect/turf_decal/bot,
 /turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "xj" = (
@@ -1488,11 +1543,26 @@
 /obj/structure/flora/grass/jungle,
 /turf/open/floor/grass,
 /area/medical/cryo)
+"xX" = (
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/structure/railing/corner{
+	dir = 8
+	},
+/turf/open/floor/iron/dark,
+/area/security/brig)
 "yq" = (
 /obj/machinery/power/shieldwallgen,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron/dark,
 /area/command/teleporter)
+"yt" = (
+/obj/structure/stairs/east,
+/obj/structure/railing,
+/turf/open/floor/iron/dark,
+/area/security/brig)
 "yD" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -1567,6 +1637,7 @@
 /obj/structure/chair/office{
 	dir = 1
 	},
+/obj/structure/railing/corner,
 /turf/open/floor/iron/dark,
 /area/security/brig)
 "Ar" = (
@@ -1673,8 +1744,19 @@
 	pixel_y = 4
 	},
 /obj/item/gun/energy/e_gun/dragnet,
+/obj/effect/turf_decal/bot,
 /turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
+"Bf" = (
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/structure/chair{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/space)
 "Bm" = (
 /obj/structure/stairs/east,
 /turf/open/floor/iron/white,
@@ -1756,6 +1838,18 @@
 "Dm" = (
 /turf/closed/wall/r_wall,
 /area/security/brig)
+"Dn" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/turf/open/floor/iron/dark,
+/area/space)
 "Do" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
@@ -1857,6 +1951,16 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
+"EV" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/space)
 "EZ" = (
 /obj/structure/stairs/south,
 /turf/open/floor/iron,
@@ -1921,6 +2025,13 @@
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/iron/dark,
 /area/medical/morgue)
+"FE" = (
+/obj/machinery/door/airlock/security{
+	name = "Interrogation";
+	req_access_txt = "63"
+	},
+/turf/open/floor/iron/dark,
+/area/security/brig)
 "FI" = (
 /turf/closed/wall/r_wall,
 /area/ai_monitored/security/armory)
@@ -2111,6 +2222,11 @@
 	},
 /turf/open/floor/iron/freezer,
 /area/medical/cryo)
+"Js" = (
+/obj/structure/table,
+/obj/item/flashlight/lamp,
+/turf/open/floor/iron/dark,
+/area/space)
 "JB" = (
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/bot,
@@ -2133,6 +2249,13 @@
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/iron/dark,
 /area/medical/morgue)
+"Kg" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red,
+/turf/open/floor/iron/dark,
+/area/space)
 "Kh" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
@@ -2146,7 +2269,6 @@
 	},
 /obj/structure/bed,
 /obj/item/bedsheet/medical,
-/obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/iron/white,
 /area/security/brig)
 "Kw" = (
@@ -2167,6 +2289,9 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
+"KT" = (
+/turf/open/floor/plating,
+/area/security/brig)
 "KU" = (
 /obj/structure/table,
 /obj/machinery/microwave,
@@ -2206,6 +2331,16 @@
 /obj/structure/sign/departments/chemistry,
 /turf/closed/wall/r_wall,
 /area/medical/chemistry)
+"LG" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/turf/open/floor/iron/dark,
+/area/space)
 "LJ" = (
 /obj/machinery/door/airlock/engineering/glass{
 	name = "Server Room";
@@ -2320,10 +2455,6 @@
 	dir = 8
 	},
 /area/space)
-"MK" = (
-/obj/structure/stairs/north,
-/turf/open/floor/iron/dark,
-/area/security/brig)
 "MN" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
@@ -2454,6 +2585,10 @@
 /obj/machinery/smartfridge/organ,
 /turf/open/floor/iron/white,
 /area/medical/surgery/room_b)
+"OU" = (
+/obj/structure/stairs/east,
+/turf/open/floor/iron/dark,
+/area/security/brig)
 "OZ" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
@@ -2473,6 +2608,10 @@
 "Pp" = (
 /turf/closed/wall/r_wall,
 /area/ai_monitored/turret_protected/ai_upload)
+"Ps" = (
+/obj/structure/chair/office,
+/turf/open/floor/iron/dark,
+/area/space)
 "Px" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
@@ -2483,6 +2622,10 @@
 	},
 /turf/open/floor/iron/white,
 /area/medical/medbay/central)
+"Py" = (
+/obj/structure/stairs/north,
+/turf/open/floor/iron/freezer,
+/area/medical/cryo)
 "PF" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
@@ -2562,6 +2705,24 @@
 	},
 /turf/open/floor/plating,
 /area/space)
+"QM" = (
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/space)
+"QX" = (
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/structure/railing/corner,
+/turf/open/floor/iron/dark,
+/area/security/brig)
 "Ra" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -2640,6 +2801,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
+/obj/effect/turf_decal/bot,
 /turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "RU" = (
@@ -2663,6 +2825,22 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron/white,
 /area/medical/surgery/room_b)
+"Sy" = (
+/obj/structure/table,
+/turf/open/floor/iron/dark,
+/area/space)
+"SC" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/structure/railing/corner{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/security/brig)
 "SP" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -2685,6 +2863,9 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/vomit/old,
+/obj/structure/railing/corner{
+	dir = 1
+	},
 /turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "Te" = (
@@ -2774,6 +2955,7 @@
 /turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "TR" = (
+/obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/iron/white,
 /area/security/brig)
 "Ub" = (
@@ -2856,6 +3038,10 @@
 	},
 /turf/open/floor/iron/freezer,
 /area/medical/cryo)
+"Uy" = (
+/obj/structure/stairs/west,
+/turf/open/floor/iron/dark,
+/area/security/brig)
 "UG" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
@@ -2920,6 +3106,13 @@
 	},
 /turf/open/floor/iron/dark,
 /area/tcommsat/server)
+"VF" = (
+/obj/structure/stairs/east,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/security/brig)
 "VK" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4
@@ -3003,20 +3196,28 @@
 /obj/effect/turf_decal/tile/neutral,
 /turf/open/floor/iron/dark/corner,
 /area/space)
+"WJ" = (
+/obj/structure/stairs/west,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/security/brig)
 "WM" = (
 /turf/open/floor/iron/freezer,
 /area/medical/chemistry)
+"WY" = (
+/obj/structure/stairs/north,
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/iron/freezer,
+/area/medical/cryo)
 "Xq" = (
 /obj/machinery/telecomms/server/presets/medical,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
-"Xv" = (
-/obj/effect/turf_decal/tile/red{
-	dir = 4
-	},
-/turf/open/floor/iron/dark,
-/area/security/brig)
 "Xz" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -3111,6 +3312,18 @@
 	},
 /turf/open/floor/iron/white,
 /area/medical/medbay/central)
+"Zv" = (
+/obj/structure/table,
+/obj/item/folder/red{
+	pixel_x = -5;
+	pixel_y = 3
+	},
+/obj/item/taperecorder{
+	pixel_x = 5;
+	pixel_y = 6
+	},
+/turf/open/floor/iron/dark,
+/area/space)
 "Zz" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -3172,6 +3385,9 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/structure/railing/corner{
 	dir = 4
 	},
 /turf/open/floor/iron/freezer,
@@ -31850,7 +32066,7 @@ CQ
 CA
 Vk
 pM
-gw
+Py
 Jr
 KE
 Iv
@@ -32107,7 +32323,7 @@ Co
 CA
 Vk
 pM
-gw
+WY
 rq
 rk
 Fx
@@ -33395,12 +33611,12 @@ NM
 Dm
 Dm
 HD
-Cz
-Cz
-Cz
-Cz
-Cz
-Cz
+Ro
+Ro
+Ro
+Ro
+Ro
+Ro
 Cz
 Cz
 Cz
@@ -33652,7 +33868,7 @@ Vy
 ke
 Dm
 HD
-Cz
+Ro
 Cz
 Cz
 Cz
@@ -33909,7 +34125,7 @@ Ug
 Mb
 Dm
 HD
-Cz
+Ro
 Cz
 Cz
 Cz
@@ -34166,12 +34382,12 @@ Ug
 Mb
 Dm
 HD
-Cz
-Cz
-Cz
-Cz
-Cz
-Cz
+Ro
+Ro
+Ro
+Ro
+Ro
+Ro
 Cz
 Cz
 Cz
@@ -34420,15 +34636,15 @@ ZE
 jl
 Wa
 Ug
-Mb
+eB
 Dm
 HD
-Cz
-Cz
-Cz
-Cz
-Cz
-Cz
+HD
+HD
+HD
+HD
+HD
+Ro
 Cz
 Cz
 Cz
@@ -34677,14 +34893,14 @@ YZ
 nh
 Wa
 Ug
-eB
+Mb
 Dm
+Ro
+Ro
+Ro
+Ro
+Ro
 HD
-Cz
-Cz
-Cz
-Cz
-Cz
 Cz
 Cz
 Cz
@@ -34936,12 +35152,12 @@ Wa
 Ug
 Mb
 Dm
+Dn
+nc
+nc
+QM
+Ro
 HD
-Cz
-Cz
-Cz
-Cz
-Cz
 Cz
 Cz
 Cz
@@ -35193,12 +35409,12 @@ Wa
 Ug
 Mb
 Dm
+aX
+Ps
+Js
+qH
+Ro
 HD
-Cz
-Cz
-Cz
-Cz
-Cz
 Cz
 Cz
 Cz
@@ -35449,13 +35665,13 @@ uh
 Wa
 Ug
 Mb
-Dm
+FE
+aX
+dS
+Sy
+Bf
+Ro
 HD
-Cz
-Cz
-Cz
-Cz
-Cz
 Cz
 Cz
 Cz
@@ -35703,16 +35919,16 @@ Dm
 Ye
 Ye
 Ye
-Wa
+AM
 Ug
 Mb
 Dm
+aX
+Ps
+Zv
+bW
+Ro
 HD
-Cz
-Cz
-Cz
-Cz
-Cz
 Cz
 Cz
 Cz
@@ -35964,12 +36180,12 @@ Wa
 Ug
 Mb
 Dm
+EV
+Kg
+Kg
+LG
+Ro
 HD
-Cz
-Cz
-Cz
-Cz
-Cz
 Cz
 Cz
 Cz
@@ -36221,12 +36437,12 @@ Wa
 Ug
 Mb
 Dm
+Ro
+Ro
+Ro
+Ro
+Ro
 HD
-Cz
-Cz
-Cz
-Cz
-Cz
 Cz
 Cz
 Cz
@@ -36479,11 +36695,11 @@ Ug
 Mb
 Dm
 HD
-Cz
-Cz
-Cz
-Cz
-Cz
+HD
+HD
+HD
+HD
+HD
 Cz
 Cz
 Cz
@@ -36731,9 +36947,9 @@ pa
 PF
 Mn
 Ak
-Wa
+jb
 Ug
-Mb
+QX
 Dm
 HD
 Cz
@@ -36988,9 +37204,9 @@ Dm
 Dm
 Dm
 Dm
-AM
-Ug
-Mb
+VF
+OU
+yt
 Dm
 HD
 Cz
@@ -37243,11 +37459,11 @@ HD
 HD
 HD
 HD
+KT
 Dm
-MK
-ag
-Ug
-Mb
+Dm
+Dm
+Dm
 Dm
 HD
 Cz
@@ -37500,12 +37716,12 @@ HD
 HD
 HD
 HD
-Dm
-MK
-Ug
-Ug
-Mb
-Dm
+KT
+KT
+KT
+KT
+KT
+KT
 HD
 Cz
 Cz
@@ -37758,10 +37974,10 @@ GI
 GI
 GI
 Dm
-MK
-Xv
-Ug
-Mb
+Dm
+Dm
+Dm
+Dm
 Dm
 HD
 Cz
@@ -38016,9 +38232,9 @@ FI
 FI
 FI
 FI
-AM
-Ug
-Mb
+WJ
+Uy
+vr
 Dm
 HD
 Cz
@@ -38273,9 +38489,9 @@ jU
 Xz
 JN
 FI
-Wa
+SC
 Ug
-Mb
+xX
 Dm
 HD
 Cz
@@ -39043,8 +39259,8 @@ Oo
 ZJ
 aA
 ig
-FI
-Wa
+wq
+AM
 Ug
 Mb
 Dm
