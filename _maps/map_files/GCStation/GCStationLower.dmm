@@ -3,18 +3,18 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/security/brig)
 "aw" = (
 /obj/effect/landmark/start/medical_doctor,
-/turf/open/floor/plasteel/cafeteria,
+/turf/open/floor/iron/cafeteria,
 /area/medical/break_room)
 "aA" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/red,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "aI" = (
 /obj/effect/turf_decal/tile/red{
@@ -29,7 +29,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "aK" = (
 /obj/machinery/door/airlock/medical{
@@ -37,7 +37,7 @@
 	req_access_txt = "45"
 	},
 /obj/machinery/door/firedoor,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery)
 "bd" = (
 /obj/effect/turf_decal/stripes/line{
@@ -46,8 +46,8 @@
 /obj/structure/table,
 /obj/item/beacon,
 /obj/item/hand_tele,
-/turf/open/floor/plasteel,
-/area/teleporter)
+/turf/open/floor/iron,
+/area/command/teleporter)
 "bf" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
@@ -63,7 +63,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/iron/showroomfloor,
 /area/medical/cryo)
 "bE" = (
 /obj/effect/turf_decal/tile/blue{
@@ -79,7 +79,7 @@
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 6
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "bG" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -87,7 +87,7 @@
 	},
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/stripes/line,
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/chemistry)
 "bI" = (
 /obj/structure/rack,
@@ -109,7 +109,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "bS" = (
 /obj/effect/turf_decal/stripes/line{
@@ -122,7 +122,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/stripes/corner,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "bT" = (
 /obj/structure/window/reinforced{
@@ -140,13 +140,13 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/neutral,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "bX" = (
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 6
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "cb" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -154,7 +154,7 @@
 	},
 /obj/effect/turf_decal/tile/yellow,
 /obj/machinery/light,
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/chemistry)
 "cj" = (
 /obj/machinery/door/airlock/engineering/glass{
@@ -164,7 +164,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/tcommsat/server)
 "cl" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -174,14 +174,14 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/yellow,
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/chemistry)
 "co" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "cp" = (
 /obj/effect/turf_decal/tile/blue{
@@ -193,14 +193,14 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "cq" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery)
 "cs" = (
 /obj/effect/turf_decal/tile/red{
@@ -215,13 +215,13 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/security/brig)
 "cB" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/tcommsat/server)
 "cE" = (
 /obj/effect/turf_decal/tile/blue{
@@ -232,17 +232,17 @@
 	},
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/effect/turf_decal/delivery,
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/iron/showroomfloor,
 /area/medical/cryo)
 "cO" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/yellow,
-/turf/open/floor/plasteel,
+/turf/open/floor/iron,
 /area/security/brig)
 "cP" = (
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/tcommsat/server)
 "cZ" = (
 /obj/effect/turf_decal/tile/red{
@@ -252,14 +252,14 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "dd" = (
 /obj/machinery/power/shieldwallgen,
 /obj/effect/turf_decal/bot,
 /obj/machinery/light/small,
-/turf/open/floor/plasteel/dark,
-/area/teleporter)
+/turf/open/floor/iron/dark,
+/area/command/teleporter)
 "di" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8
@@ -273,7 +273,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "dr" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -283,7 +283,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/chemistry)
 "dG" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -291,7 +291,7 @@
 	},
 /obj/effect/turf_decal/tile/yellow,
 /obj/structure/stairs/south,
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/chemistry)
 "dI" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
@@ -302,7 +302,7 @@
 	name = "Cell 3 Locker"
 	},
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel,
+/turf/open/floor/iron,
 /area/security/brig)
 "dL" = (
 /obj/machinery/computer/upload/ai{
@@ -329,11 +329,11 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "eu" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/space)
 "eB" = (
 /obj/effect/turf_decal/tile/red,
@@ -341,7 +341,7 @@
 	dir = 8
 	},
 /obj/machinery/light,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/security/brig)
 "eG" = (
 /obj/machinery/computer/upload/borg{
@@ -359,7 +359,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "eS" = (
 /turf/closed/wall,
@@ -370,7 +370,7 @@
 	req_access = null;
 	req_access_txt = "6"
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/medical/morgue)
 "fM" = (
 /obj/effect/turf_decal/tile/red{
@@ -386,7 +386,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "fO" = (
 /obj/effect/turf_decal/stripes/line{
@@ -398,8 +398,8 @@
 	},
 /obj/item/radio/off,
 /obj/item/radio/off,
-/turf/open/floor/plasteel,
-/area/teleporter)
+/turf/open/floor/iron,
+/area/command/teleporter)
 "gg" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -413,7 +413,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "gj" = (
 /obj/structure/rack,
@@ -434,11 +434,11 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/open/floor/plasteel,
-/area/teleporter)
+/turf/open/floor/iron,
+/area/command/teleporter)
 "gw" = (
 /obj/structure/stairs/north,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/medical/cryo)
 "gx" = (
 /obj/machinery/status_display/evac{
@@ -459,7 +459,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "gE" = (
 /obj/structure/window/reinforced{
@@ -475,7 +475,7 @@
 	req_access_txt = "5"
 	},
 /obj/machinery/door/firedoor,
-/turf/open/floor/plasteel/cafeteria,
+/turf/open/floor/iron/cafeteria,
 /area/medical/break_room)
 "hv" = (
 /obj/effect/turf_decal/stripes/line{
@@ -484,7 +484,7 @@
 /obj/effect/turf_decal/trimline/yellow/filled/corner{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "hy" = (
 /obj/effect/turf_decal/stripes/line{
@@ -496,7 +496,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/medbay/central)
 "hH" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
@@ -507,20 +507,20 @@
 	name = "Cell 1 Locker"
 	},
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel,
+/turf/open/floor/iron,
 /area/security/brig)
 "hL" = (
-/turf/open/floor/plasteel/cafeteria,
+/turf/open/floor/iron/cafeteria,
 /area/medical/break_room)
 "hM" = (
 /obj/machinery/telecomms/server/presets/engineering,
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "hS" = (
 /obj/machinery/telecomms/server/presets/security,
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "hT" = (
 /obj/effect/turf_decal/tile/blue{
@@ -530,7 +530,7 @@
 /obj/structure/table/glass,
 /obj/item/storage/backpack/duffelbag/med/surgery,
 /obj/machinery/light,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery)
 "hW" = (
 /turf/closed/wall,
@@ -542,7 +542,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/chemistry)
 "ig" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -560,26 +560,26 @@
 	weaponscheck = 1
 	},
 /obj/effect/turf_decal/box,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "in" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/yellow/filled/corner,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "io" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "is" = (
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "iC" = (
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "iI" = (
 /obj/machinery/door/airlock/medical/glass{
@@ -594,7 +594,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "iP" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -603,20 +603,20 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/chemistry)
 "iT" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "iZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark/corner{
+/turf/open/floor/iron/dark/corner{
 	dir = 1
 	},
 /area/space)
@@ -625,7 +625,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "jj" = (
 /obj/effect/turf_decal/tile/blue{
@@ -637,7 +637,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "jl" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -651,12 +651,12 @@
 /obj/structure/bed,
 /obj/item/bedsheet/orange,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel,
+/turf/open/floor/iron,
 /area/security/brig)
 "jJ" = (
 /obj/effect/turf_decal/stripes/line,
-/turf/open/floor/plasteel,
-/area/teleporter)
+/turf/open/floor/iron,
+/area/command/teleporter)
 "jU" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -673,7 +673,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "jY" = (
 /obj/effect/turf_decal/trimline/blue/filled/line{
@@ -687,7 +687,7 @@
 	req_access_txt = "45"
 	},
 /obj/machinery/door/firedoor,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery/room_b)
 "kc" = (
 /obj/effect/turf_decal/tile/blue{
@@ -703,7 +703,7 @@
 /obj/structure/bed,
 /obj/item/bedsheet/medical,
 /obj/machinery/iv_drip,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/security/brig)
 "ke" = (
 /obj/effect/turf_decal/tile/red,
@@ -716,14 +716,14 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/security/brig)
 "kf" = (
 /obj/structure/railing{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/medical/morgue)
 "ki" = (
 /obj/structure/table/reinforced,
@@ -745,11 +745,11 @@
 	id = "Cell 3";
 	name = "Cell 3"
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/security/brig)
 "kx" = (
 /obj/machinery/telecomms/broadcaster/preset_left,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "kD" = (
 /obj/effect/turf_decal/tile/blue{
@@ -763,20 +763,20 @@
 	},
 /obj/effect/turf_decal/delivery,
 /obj/machinery/disposal/bin,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery/room_b)
 "kS" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/chemistry)
 "lm" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
-/area/bridge)
+/turf/open/floor/iron/dark,
+/area/command/bridge)
 "lA" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -787,7 +787,7 @@
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 6
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "lY" = (
 /obj/machinery/door/airlock/medical/glass{
@@ -799,7 +799,7 @@
 	name = "Chemistry shutters"
 	},
 /obj/machinery/door/firedoor,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/chemistry)
 "mf" = (
 /obj/effect/turf_decal/tile/red{
@@ -810,20 +810,20 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "mh" = (
 /obj/machinery/telecomms/server/presets/supply,
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "mp" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
 /obj/machinery/teleport/station,
-/turf/open/floor/plasteel,
-/area/teleporter)
+/turf/open/floor/iron,
+/area/command/teleporter)
 "my" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -831,14 +831,14 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "mA" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/blue,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/security/brig)
 "mD" = (
 /obj/effect/turf_decal/tile/blue,
@@ -850,13 +850,13 @@
 	},
 /obj/effect/turf_decal/delivery,
 /obj/machinery/disposal/bin,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery)
 "mK" = (
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/chemistry)
 "mP" = (
 /obj/machinery/door/airlock/engineering/glass{
@@ -866,12 +866,12 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/tcommsat/server)
 "nf" = (
 /obj/machinery/telecomms/server/presets/service,
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "nh" = (
 /obj/effect/turf_decal/trimline/red/filled/line{
@@ -883,7 +883,7 @@
 	id = "Cell 2";
 	name = "Cell 2"
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/security/brig)
 "nl" = (
 /obj/machinery/porta_turret/ai,
@@ -907,15 +907,15 @@
 	},
 /obj/effect/turf_decal/tile/blue,
 /obj/structure/table/glass,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery)
 "nJ" = (
 /obj/machinery/telecomms/processor/preset_one,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "nU" = (
 /obj/effect/turf_decal/tile/blue,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/security/brig)
 "oi" = (
 /obj/effect/turf_decal/stripes/line{
@@ -927,11 +927,11 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/medbay/central)
 "om" = (
 /obj/machinery/telecomms/receiver/preset_right,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "oo" = (
 /obj/effect/turf_decal/tile/blue{
@@ -944,41 +944,41 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery)
 "os" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/red,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/security/brig)
 "oz" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
 /obj/structure/ladder,
-/turf/open/floor/plasteel,
-/area/teleporter)
+/turf/open/floor/iron,
+/area/command/teleporter)
 "oB" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/yellow,
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/chemistry)
 "oC" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
 /obj/machinery/light/small,
-/turf/open/floor/plasteel/dark,
-/area/bridge)
+/turf/open/floor/iron/dark,
+/area/command/bridge)
 "oD" = (
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 5
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "oE" = (
 /obj/effect/turf_decal/tile/blue{
@@ -987,7 +987,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/medbay/central)
 "oM" = (
 /turf/closed/wall,
@@ -1007,7 +1007,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "pa" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -1021,7 +1021,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/iron,
 /area/security/brig)
 "pe" = (
 /obj/effect/turf_decal/tile/blue{
@@ -1030,14 +1030,14 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "pt" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/yellow,
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/chemistry)
 "pu" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -1047,13 +1047,13 @@
 	dir = 4
 	},
 /obj/machinery/light/small,
-/turf/open/floor/plasteel/dark/side{
+/turf/open/floor/iron/dark/side{
 	dir = 1
 	},
 /area/space)
 "pw" = (
 /obj/machinery/telecomms/bus/preset_two,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "pC" = (
 /turf/closed/wall/r_wall,
@@ -1072,7 +1072,7 @@
 	},
 /obj/effect/spawner/lootdrop/maintenance,
 /obj/effect/spawner/lootdrop/armory_contraband/metastation,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "qr" = (
 /obj/machinery/door/airlock/medical/glass{
@@ -1086,7 +1086,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/medbay/central)
 "qM" = (
 /turf/open/floor/engine,
@@ -1095,8 +1095,8 @@
 /obj/effect/turf_decal/trimline/yellow/filled/corner{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark,
-/area/bridge)
+/turf/open/floor/iron/dark,
+/area/command/bridge)
 "qW" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 9
@@ -1106,7 +1106,7 @@
 	name = "Cell 2 Locker"
 	},
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel,
+/turf/open/floor/iron,
 /area/security/brig)
 "qY" = (
 /obj/machinery/light,
@@ -1127,7 +1127,7 @@
 	pixel_x = -3;
 	pixel_y = -3
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "rh" = (
 /obj/effect/spawner/structure/window,
@@ -1137,7 +1137,7 @@
 /obj/machinery/atmospherics/pipe/manifold/general/visible{
 	dir = 1
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "rp" = (
 /turf/open/floor/circuit,
@@ -1149,31 +1149,31 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "rz" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/structure/table/reinforced,
 /obj/item/clothing/suit/hooded/ablative,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "rM" = (
 /obj/machinery/door/airlock/security{
 	name = "Armoury";
 	req_access_txt = "3"
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "sa" = (
 /obj/structure/table/optable,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery/room_b)
 "sI" = (
 /obj/structure/table,
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/medical/morgue)
 "sK" = (
 /obj/effect/spawner/structure/window,
@@ -1185,11 +1185,11 @@
 	req_access_txt = "61"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "to" = (
 /obj/effect/turf_decal/tile/yellow,
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/chemistry)
 "tu" = (
 /obj/effect/turf_decal/tile/red{
@@ -1199,7 +1199,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/security/brig)
 "ty" = (
 /obj/structure/window/reinforced{
@@ -1210,7 +1210,7 @@
 	},
 /obj/effect/turf_decal/tile/neutral,
 /obj/structure/table/reinforced,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "tT" = (
 /obj/structure/table,
@@ -1226,33 +1226,33 @@
 	id = "Cell 1";
 	name = "Cell 1"
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/security/brig)
 "ut" = (
 /obj/machinery/telecomms/server/presets/command,
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "uC" = (
 /obj/effect/turf_decal/stripes/corner,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "uL" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "uY" = (
 /obj/structure/table/optable,
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery)
 "vg" = (
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery/room_b)
 "vi" = (
 /obj/structure/rack,
@@ -1276,13 +1276,13 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "vl" = (
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/floor/plasteel/cafeteria,
+/turf/open/floor/iron/cafeteria,
 /area/medical/break_room)
 "vp" = (
 /obj/effect/turf_decal/tile/red{
@@ -1298,17 +1298,17 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "vq" = (
 /obj/effect/turf_decal/stripes/corner,
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/chemistry)
 "vs" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/medical/morgue)
 "vu" = (
 /obj/machinery/door/airlock/maintenance{
@@ -1326,7 +1326,7 @@
 	},
 /obj/effect/turf_decal/bot,
 /obj/structure/closet/crate/freezer/surplus_limbs,
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/iron/showroomfloor,
 /area/medical/cryo)
 "vz" = (
 /obj/structure/cable,
@@ -1338,18 +1338,18 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/medical/morgue)
 "vQ" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
 /obj/machinery/teleport/hub,
-/turf/open/floor/plasteel,
-/area/teleporter)
+/turf/open/floor/iron,
+/area/command/teleporter)
 "vY" = (
 /obj/structure/stairs/north,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/medical/morgue)
 "wa" = (
 /obj/effect/turf_decal/tile/blue{
@@ -1363,7 +1363,7 @@
 	dir = 2;
 	name = "Infirmary"
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/security/brig)
 "wk" = (
 /obj/structure/window/reinforced{
@@ -1383,11 +1383,11 @@
 "wL" = (
 /obj/structure/stairs/north,
 /turf/open/floor/engine,
-/area/bridge)
+/area/command/bridge)
 "wR" = (
 /obj/structure/grille,
 /obj/structure/cable,
-/turf/open/floor/plasteel,
+/turf/open/floor/iron,
 /area/space)
 "xf" = (
 /obj/effect/turf_decal/trimline/blue/filled/corner{
@@ -1422,14 +1422,14 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "xj" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery/room_b)
 "xo" = (
 /obj/effect/turf_decal/tile/blue{
@@ -1440,7 +1440,7 @@
 	dir = 4
 	},
 /obj/structure/table/glass,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery)
 "xp" = (
 /obj/effect/spawner/structure/window/reinforced/tinted,
@@ -1457,7 +1457,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/neutral,
-/turf/open/floor/plasteel/dark/side,
+/turf/open/floor/iron/dark/side,
 /area/space)
 "xz" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -1466,7 +1466,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "xD" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -1476,7 +1476,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/yellow,
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/chemistry)
 "xT" = (
 /obj/structure/window/reinforced{
@@ -1491,13 +1491,13 @@
 "yq" = (
 /obj/machinery/power/shieldwallgen,
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel/dark,
-/area/teleporter)
+/turf/open/floor/iron/dark,
+/area/command/teleporter)
 "yD" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "zd" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1507,7 +1507,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark/side{
+/turf/open/floor/iron/dark/side{
 	dir = 8
 	},
 /area/space)
@@ -1525,7 +1525,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/chemistry)
 "zM" = (
 /obj/effect/turf_decal/tile/blue{
@@ -1535,7 +1535,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/blue,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "zU" = (
 )
@@ -1551,7 +1551,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery)
 "Ak" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -1567,7 +1567,7 @@
 /obj/structure/chair/office{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/security/brig)
 "Ar" = (
 /obj/effect/turf_decal/tile/red{
@@ -1580,7 +1580,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "At" = (
 /obj/effect/turf_decal/tile/blue{
@@ -1594,7 +1594,7 @@
 	},
 /obj/effect/turf_decal/box,
 /obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/iron/showroomfloor,
 /area/medical/cryo)
 "AB" = (
 /obj/structure/rack,
@@ -1618,7 +1618,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "AM" = (
 /obj/effect/turf_decal/tile/red{
@@ -1630,11 +1630,11 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/security/brig)
 "AT" = (
 /obj/machinery/telecomms/broadcaster/preset_right,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "AU" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -1657,7 +1657,7 @@
 	},
 /obj/item/folder/blue,
 /obj/item/pen,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/security/brig)
 "Be" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -1673,11 +1673,11 @@
 	pixel_y = 4
 	},
 /obj/item/gun/energy/e_gun/dragnet,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "Bm" = (
 /obj/structure/stairs/east,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "Bo" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -1690,12 +1690,12 @@
 /obj/structure/bodycontainer/morgue{
 	dir = 2
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/iron,
 /area/security/brig)
 "Bt" = (
 /obj/effect/turf_decal/trimline/blue/filled/line,
-/turf/open/floor/plasteel/dark,
-/area/bridge)
+/turf/open/floor/iron/dark,
+/area/command/bridge)
 "Bw" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -1710,7 +1710,7 @@
 "BU" = (
 /obj/machinery/vending/coffee,
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel/cafeteria,
+/turf/open/floor/iron/cafeteria,
 /area/medical/break_room)
 "BX" = (
 /obj/effect/turf_decal/tile/blue{
@@ -1721,11 +1721,11 @@
 	dir = 4
 	},
 /obj/structure/table/glass,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery/room_b)
 "Co" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/medical/morgue)
 "Cz" = (
 /turf/open/space/basic,
@@ -1733,7 +1733,7 @@
 "CA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/bot_white,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/medical/morgue)
 "CM" = (
 /obj/machinery/telecomms/hub/preset,
@@ -1744,14 +1744,14 @@
 	dir = 1
 	},
 /obj/machinery/light/small,
-/turf/open/floor/plasteel/dark,
-/area/bridge)
+/turf/open/floor/iron/dark,
+/area/command/bridge)
 "CQ" = (
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/medical/morgue)
 "Dh" = (
 /obj/machinery/telecomms/bus/preset_three,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "Dm" = (
 /turf/closed/wall/r_wall,
@@ -1767,7 +1767,7 @@
 	dir = 8
 	},
 /obj/structure/table/glass,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/security/brig)
 "Dq" = (
 /obj/effect/turf_decal/tile/blue{
@@ -1780,14 +1780,14 @@
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 5
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "Ds" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
-/turf/open/floor/plasteel,
-/area/teleporter)
+/turf/open/floor/iron,
+/area/command/teleporter)
 "Du" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
@@ -1805,7 +1805,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/stripes/corner,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "Dw" = (
 /obj/structure/sign/warning/coldtemp{
@@ -1815,7 +1815,7 @@
 /area/medical/cryo)
 "Dz" = (
 /obj/effect/turf_decal/bot_white,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/medical/morgue)
 "DB" = (
 /obj/structure/chair/comfy/black{
@@ -1825,7 +1825,7 @@
 /area/medical/break_room)
 "Eu" = (
 /obj/structure/stairs/north,
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/medbay/central)
 "EB" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -1840,7 +1840,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "EK" = (
 /obj/effect/turf_decal/tile/blue{
@@ -1850,17 +1850,17 @@
 	dir = 8
 	},
 /obj/machinery/smartfridge/organ,
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/iron/showroomfloor,
 /area/medical/cryo)
 "ER" = (
 /obj/machinery/blackbox_recorder,
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "EZ" = (
 /obj/structure/stairs/south,
-/turf/open/floor/plasteel,
-/area/teleporter)
+/turf/open/floor/iron,
+/area/command/teleporter)
 "Fs" = (
 /obj/item/storage/box/rubbershot{
 	pixel_x = -3;
@@ -1891,14 +1891,14 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "Fu" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
-/turf/open/floor/plasteel,
-/area/teleporter)
+/turf/open/floor/iron,
+/area/command/teleporter)
 "Fx" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
@@ -1908,7 +1908,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "FC" = (
 /obj/machinery/holopad/secure,
@@ -1919,14 +1919,14 @@
 	dir = 2
 	},
 /obj/effect/decal/cleanable/cobweb/cobweb2,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/medical/morgue)
 "FI" = (
 /turf/closed/wall/r_wall,
 /area/ai_monitored/security/armory)
 "FW" = (
 /obj/machinery/telecomms/processor/preset_three,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "FZ" = (
 /obj/effect/turf_decal/trimline/blue/filled/corner{
@@ -1942,20 +1942,20 @@
 	dir = 1
 	},
 /obj/structure/table/glass,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/security/brig)
 "Gi" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/medical/morgue)
 "GE" = (
 /obj/effect/turf_decal/trimline/yellow/filled/corner{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
-/area/bridge)
+/turf/open/floor/iron/dark,
+/area/command/bridge)
 "GI" = (
 /turf/closed/wall/r_wall,
 /area/space)
@@ -1969,7 +1969,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "GX" = (
 /obj/effect/turf_decal/tile/blue,
@@ -1979,13 +1979,13 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "Hz" = (
 /obj/effect/turf_decal/bot_white,
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/effect/mapping_helpers/dead_body_placer,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/medical/morgue)
 "HD" = (
 /turf/open/floor/plating,
@@ -2006,7 +2006,7 @@
 	charge = 5e+006
 	},
 /obj/effect/turf_decal/stripes/box,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "HR" = (
 /obj/effect/turf_decal/tile/blue{
@@ -2015,7 +2015,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery)
 "HT" = (
 /turf/closed/wall,
@@ -2028,20 +2028,20 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/yellow,
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/chemistry)
 "Ib" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral,
-/turf/open/floor/plasteel/dark/side{
+/turf/open/floor/iron/dark/side{
 	dir = 4
 	},
 /area/space)
 "Ip" = (
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/space)
 "Iv" = (
 /obj/effect/turf_decal/tile/blue{
@@ -2049,10 +2049,10 @@
 	},
 /obj/effect/turf_decal/tile/blue,
 /obj/structure/table/glass,
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "Iz" = (
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery)
 "IB" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -2064,7 +2064,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/chemistry)
 "IE" = (
 /obj/effect/turf_decal/stripes/line{
@@ -2076,7 +2076,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "IM" = (
 /obj/effect/turf_decal/tile/blue{
@@ -2086,7 +2086,7 @@
 	dir = 8
 	},
 /obj/structure/bed/roller,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/security/brig)
 "IP" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -2098,18 +2098,18 @@
 	pixel_y = 3
 	},
 /obj/item/storage/box/trackimp,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "Je" = (
 /obj/machinery/telecomms/server/presets/common,
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "Jr" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "JB" = (
 /obj/machinery/door/firedoor,
@@ -2117,21 +2117,21 @@
 /obj/effect/turf_decal/caution/stand_clear{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/medical/medbay/central)
 "JN" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/structure/closet/secure_closet/lethalshots,
+/obj/structure/closet/secure_closet,
 /obj/effect/turf_decal/bot,
 /obj/item/storage/box/lethalshot,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "JT" = (
 /obj/effect/turf_decal/bot_white,
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/medical/morgue)
 "Kh" = (
 /obj/effect/turf_decal/tile/blue,
@@ -2147,7 +2147,7 @@
 /obj/structure/bed,
 /obj/item/bedsheet/medical,
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/security/brig)
 "Kw" = (
 /turf/open/floor/circuit/telecomms/mainframe,
@@ -2157,20 +2157,20 @@
 	dir = 4
 	},
 /obj/effect/landmark/start/medical_doctor,
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "KJ" = (
 /turf/closed/wall/r_wall,
-/area/teleporter)
+/area/command/teleporter)
 "KS" = (
 /obj/machinery/telecomms/message_server/preset,
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "KU" = (
 /obj/structure/table,
 /obj/machinery/microwave,
-/turf/open/floor/plasteel/cafeteria,
+/turf/open/floor/iron/cafeteria,
 /area/medical/break_room)
 "KY" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -2179,18 +2179,18 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/iron,
 /area/security/brig)
 "Lp" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/blue,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "Lq" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "Lz" = (
 /obj/effect/turf_decal/stripes/line{
@@ -2200,7 +2200,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "LC" = (
 /obj/structure/sign/departments/chemistry,
@@ -2214,17 +2214,17 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/tcommsat/server)
 "LK" = (
 /obj/machinery/power/terminal{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "LN" = (
 /obj/machinery/telecomms/receiver/preset_left,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "LO" = (
 /obj/machinery/door/airlock/medical/glass{
@@ -2232,7 +2232,7 @@
 	req_access_txt = "5"
 	},
 /obj/machinery/door/firedoor,
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "LQ" = (
 /obj/machinery/door/airlock/maintenance{
@@ -2250,14 +2250,14 @@
 	},
 /obj/effect/turf_decal/tile/blue,
 /obj/structure/table/glass,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery/room_b)
 "Mb" = (
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/security/brig)
 "Mg" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -2267,7 +2267,7 @@
 "Mh" = (
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/delivery,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/medical/medbay/central)
 "Mn" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -2285,7 +2285,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/security/brig)
 "Mp" = (
 /obj/effect/turf_decal/tile/blue{
@@ -2295,7 +2295,7 @@
 	dir = 8
 	},
 /obj/structure/table,
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/iron/showroomfloor,
 /area/medical/cryo)
 "Ms" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
@@ -2303,26 +2303,26 @@
 	},
 /obj/machinery/light/small,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel,
+/turf/open/floor/iron,
 /area/security/brig)
 "Mx" = (
 /obj/effect/turf_decal/stripes/line,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/tcommsat/server)
 "MA" = (
 /turf/closed/wall/r_wall,
-/area/bridge)
+/area/command/bridge)
 "MC" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark/corner{
+/turf/open/floor/iron/dark/corner{
 	dir = 8
 	},
 /area/space)
 "MK" = (
 /obj/structure/stairs/north,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/security/brig)
 "MN" = (
 /obj/effect/turf_decal/tile/blue{
@@ -2335,7 +2335,7 @@
 	dir = 4
 	},
 /obj/machinery/smartfridge/organ,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery)
 "Nb" = (
 /obj/machinery/door/airlock/maintenance{
@@ -2360,7 +2360,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "Nm" = (
 /obj/effect/turf_decal/tile/blue{
@@ -2368,7 +2368,7 @@
 	},
 /obj/effect/turf_decal/tile/blue,
 /obj/machinery/atmospherics/pipe/manifold4w/general/visible,
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "Nz" = (
 /obj/effect/turf_decal/tile/blue{
@@ -2381,11 +2381,11 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/iron/showroomfloor,
 /area/medical/cryo)
 "NC" = (
 /obj/machinery/telecomms/bus/preset_one,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "NI" = (
 /obj/effect/turf_decal/stripes/line{
@@ -2394,7 +2394,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "NM" = (
 /obj/machinery/door/airlock/maintenance{
@@ -2425,12 +2425,12 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "Ow" = (
 /obj/machinery/telecomms/server/presets/science,
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "OG" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -2441,7 +2441,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "OO" = (
 /obj/effect/turf_decal/tile/blue,
@@ -2452,7 +2452,7 @@
 	dir = 1
 	},
 /obj/machinery/smartfridge/organ,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery/room_b)
 "OZ" = (
 /obj/effect/turf_decal/tile/blue{
@@ -2462,13 +2462,13 @@
 	dir = 8
 	},
 /obj/structure/table/glass,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/security/brig)
 "Pg" = (
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 9
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "Pp" = (
 /turf/closed/wall/r_wall,
@@ -2481,7 +2481,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "PF" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -2491,7 +2491,7 @@
 	dir = 8
 	},
 /obj/structure/table,
-/turf/open/floor/plasteel,
+/turf/open/floor/iron,
 /area/security/brig)
 "PL" = (
 /obj/structure/table,
@@ -2508,13 +2508,13 @@
 /area/ai_monitored/turret_protected/ai_upload)
 "PR" = (
 /obj/machinery/telecomms/processor/preset_two,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "Qa" = (
 /obj/structure/bodycontainer/morgue{
 	dir = 2
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/medical/morgue)
 "Qi" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -2523,7 +2523,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark/side{
+/turf/open/floor/iron/dark/side{
 	dir = 8
 	},
 /area/space)
@@ -2544,16 +2544,16 @@
 	icon_state = "right";
 	name = "Infirmary"
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/security/brig)
 "QG" = (
-/turf/open/floor/plasteel,
-/area/teleporter)
+/turf/open/floor/iron,
+/area/command/teleporter)
 "QH" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/tcommsat/server)
 "QI" = (
 /obj/machinery/door/airlock/maintenance{
@@ -2573,7 +2573,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "Rg" = (
 /obj/structure/window/reinforced{
@@ -2594,7 +2594,7 @@
 	dir = 6
 	},
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/plasteel,
+/turf/open/floor/iron,
 /area/security/brig)
 "Ro" = (
 /turf/closed/wall,
@@ -2613,8 +2613,8 @@
 	dir = 1
 	},
 /obj/machinery/computer/teleporter,
-/turf/open/floor/plasteel,
-/area/teleporter)
+/turf/open/floor/iron,
+/area/command/teleporter)
 "RO" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -2640,18 +2640,18 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "RU" = (
 /obj/machinery/telecomms/processor/preset_four,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "Se" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
-/area/bridge)
+/turf/open/floor/iron/dark,
+/area/command/bridge)
 "Su" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
@@ -2661,7 +2661,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery/room_b)
 "SP" = (
 /obj/structure/window/reinforced{
@@ -2685,7 +2685,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/vomit/old,
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "Te" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2696,14 +2696,14 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/blood/gibs/limb,
-/turf/open/floor/plasteel/dark/side{
+/turf/open/floor/iron/dark/side{
 	dir = 1
 	},
 /area/space)
 "Tf" = (
-/obj/machinery/vending/snack/random,
+/obj/effect/spawner/randomsnackvend,
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel/cafeteria,
+/turf/open/floor/iron/cafeteria,
 /area/medical/break_room)
 "Tj" = (
 /obj/effect/turf_decal/tile/blue{
@@ -2713,17 +2713,17 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/blue,
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "Tl" = (
 /obj/machinery/telecomms/bus/preset_four,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "Tq" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "Tu" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -2747,7 +2747,7 @@
 	pixel_x = 6;
 	pixel_y = -2
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "Ty" = (
 /turf/closed/wall/r_wall,
@@ -2764,17 +2764,17 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery/room_b)
 "TD" = (
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "TR" = (
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/security/brig)
 "Ub" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2782,14 +2782,14 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/neutral,
-/turf/open/floor/plasteel/dark/side,
+/turf/open/floor/iron/dark/side,
 /area/space)
 "Uf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark/corner{
+/turf/open/floor/iron/dark/corner{
 	dir = 4
 	},
 /area/space)
@@ -2804,7 +2804,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/security/brig)
 "Ui" = (
 /obj/effect/turf_decal/tile/blue{
@@ -2814,7 +2814,7 @@
 /obj/structure/table/glass,
 /obj/item/storage/backpack/duffelbag/med/surgery,
 /obj/machinery/light,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery/room_b)
 "Ul" = (
 /obj/effect/turf_decal/tile/blue{
@@ -2823,7 +2823,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "Un" = (
 /obj/effect/turf_decal/tile/blue{
@@ -2835,7 +2835,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "Uv" = (
 /obj/effect/turf_decal/tile/blue{
@@ -2845,7 +2845,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/blue,
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "Uw" = (
 /obj/effect/turf_decal/tile/blue{
@@ -2854,7 +2854,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "UG" = (
 /obj/effect/turf_decal/tile/blue{
@@ -2863,20 +2863,20 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/surgery/room_b)
 "UL" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
 /obj/structure/closet/emcloset,
-/turf/open/floor/plasteel,
-/area/teleporter)
+/turf/open/floor/iron,
+/area/command/teleporter)
 "Vk" = (
 /obj/structure/bodycontainer/morgue{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/medical/morgue)
 "Vv" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -2897,7 +2897,7 @@
 	pixel_x = 1;
 	pixel_y = -23
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "Vx" = (
 /turf/closed/wall,
@@ -2912,13 +2912,13 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/security/brig)
 "VB" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/tcommsat/server)
 "VK" = (
 /obj/effect/turf_decal/tile/red{
@@ -2928,7 +2928,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/security/brig)
 "VL" = (
 /obj/structure/rack,
@@ -2954,7 +2954,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "VS" = (
 /obj/effect/turf_decal/tile/blue{
@@ -2966,7 +2966,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "Wa" = (
 /obj/effect/turf_decal/tile/red{
@@ -2975,12 +2975,12 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/security/brig)
 "We" = (
 /obj/machinery/disposal/bin,
 /obj/effect/turf_decal/delivery,
-/turf/open/floor/plasteel/cafeteria,
+/turf/open/floor/iron/cafeteria,
 /area/medical/break_room)
 "Wk" = (
 /obj/effect/turf_decal/tile/blue,
@@ -2990,32 +2990,32 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "Wy" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "WB" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/neutral,
-/turf/open/floor/plasteel/dark/corner,
+/turf/open/floor/iron/dark/corner,
 /area/space)
 "WM" = (
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/chemistry)
 "Xq" = (
 /obj/machinery/telecomms/server/presets/medical,
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/iron/dark/telecomms,
 /area/tcommsat/server)
 "Xv" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/security/brig)
 "Xz" = (
 /obj/effect/turf_decal/tile/neutral,
@@ -3028,7 +3028,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "XO" = (
 /obj/effect/turf_decal/trimline/blue/filled/line{
@@ -3037,7 +3037,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/cryo)
 "XU" = (
 /obj/effect/turf_decal/tile/blue{
@@ -3052,7 +3052,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "Yb" = (
 /obj/effect/turf_decal/tile/yellow{
@@ -3069,14 +3069,14 @@
 	pixel_y = -6;
 	req_access_txt = "5; 69"
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/chemistry)
 "Ye" = (
 /turf/closed/wall,
 /area/security/brig)
 "Yl" = (
 /obj/structure/table,
-/turf/open/floor/plasteel/cafeteria,
+/turf/open/floor/iron/cafeteria,
 /area/medical/break_room)
 "YJ" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
@@ -3084,13 +3084,13 @@
 	},
 /obj/structure/bed,
 /obj/item/bedsheet/orange,
-/turf/open/floor/plasteel,
+/turf/open/floor/iron,
 /area/security/brig)
 "YZ" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 6
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/iron,
 /area/security/brig)
 "Zh" = (
 /obj/effect/turf_decal/tile/blue{
@@ -3103,13 +3103,13 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/iron/showroomfloor,
 /area/medical/cryo)
 "Zn" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/turf/open/floor/plasteel/white,
+/turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "Zz" = (
 /obj/effect/turf_decal/tile/blue{
@@ -3120,7 +3120,7 @@
 	},
 /obj/effect/turf_decal/bot,
 /obj/structure/closet/crate/freezer/blood,
-/turf/open/floor/plasteel/showroomfloor,
+/turf/open/floor/iron/showroomfloor,
 /area/medical/cryo)
 "ZC" = (
 /obj/structure/table,
@@ -3142,7 +3142,7 @@
 	dir = 10
 	},
 /obj/machinery/light/small,
-/turf/open/floor/plasteel,
+/turf/open/floor/iron,
 /area/security/brig)
 "ZJ" = (
 /obj/structure/rack,
@@ -3159,7 +3159,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "ZZ" = (
 /obj/effect/turf_decal/tile/blue{
@@ -3174,7 +3174,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
-/turf/open/floor/plasteel/freezer,
+/turf/open/floor/iron/freezer,
 /area/medical/cryo)
 
 (1,1,1) = {"
