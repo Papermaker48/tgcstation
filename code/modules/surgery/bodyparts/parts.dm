@@ -74,7 +74,6 @@
 	. = ..()
 	if(. == FALSE)
 		return
-	var/mob/living/carbon/owner = null
 	if(owner)
 		if(HAS_TRAIT(owner, TRAIT_PARALYSIS_L_ARM))
 			ADD_TRAIT(src, TRAIT_PARALYSIS, TRAIT_PARALYSIS_L_ARM)
@@ -125,7 +124,7 @@
 
 	if(owner.hud_used)
 		var/atom/movable/screen/inventory/hand/hand_screen_object = owner.hud_used.hand_slots["[held_index]"]
-		hand_screen_object?.update_icon()
+		hand_screen_object?.update_appearance()
 
 
 /obj/item/bodypart/l_arm/monkey
@@ -170,7 +169,6 @@
 	. = ..()
 	if(. == FALSE)
 		return
-	var/mob/living/carbon/owner = null
 	if(owner)
 		if(HAS_TRAIT(owner, TRAIT_PARALYSIS_R_ARM))
 			ADD_TRAIT(src, TRAIT_PARALYSIS, TRAIT_PARALYSIS_R_ARM)
@@ -221,7 +219,7 @@
 
 	if(owner.hud_used)
 		var/atom/movable/screen/inventory/hand/hand_screen_object = owner.hud_used.hand_slots["[held_index]"]
-		hand_screen_object?.update_icon()
+		hand_screen_object?.update_appearance()
 
 
 /obj/item/bodypart/r_arm/monkey

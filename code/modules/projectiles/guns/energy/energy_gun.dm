@@ -3,7 +3,7 @@
 	desc = "A basic hybrid energy gun with two settings: disable and kill."
 	icon_state = "energy"
 	w_class = WEIGHT_CLASS_BULKY
-	inhand_icon_state = null	//so the human update icon uses the icon_state instead.
+	inhand_icon_state = null //so the human update icon uses the icon_state instead.
 	ammo_type = list(/obj/item/ammo_casing/energy/disabler, /obj/item/ammo_casing/energy/laser)
 	modifystate = 1
 	can_flashlight = TRUE
@@ -104,7 +104,6 @@
 	icon_state = "nucgun"
 	inhand_icon_state = "nucgun"
 	charge_delay = 10
-	pin = null
 	can_charge = FALSE
 	ammo_x_offset = 1
 	ammo_type = list(/obj/item/ammo_casing/energy/laser, /obj/item/ammo_casing/energy/disabler)
@@ -120,7 +119,7 @@
 
 /obj/item/gun/energy/e_gun/nuclear/shoot_live_shot(mob/living/user, pointblank = 0, atom/pbtarget = null, message = 1)
 	failcheck()
-	update_icon()
+	update_appearance()
 	..()
 
 /obj/item/gun/energy/e_gun/nuclear/proc/failcheck()
@@ -147,11 +146,12 @@
 	. = ..()
 	if(reactor_overloaded)
 		. += "[icon_state]_fail_3"
-	else
-		switch(fail_tick)
-			if(0)
-				. += "[icon_state]_fail_0"
-			if(1 to 150)
-				. += "[icon_state]_fail_1"
-			if(151 to INFINITY)
-				. += "[icon_state]_fail_2"
+		return
+
+	switch(fail_tick)
+		if(0)
+			. += "[icon_state]_fail_0"
+		if(1 to 150)
+			. += "[icon_state]_fail_1"
+		if(151 to INFINITY)
+			. += "[icon_state]_fail_2"

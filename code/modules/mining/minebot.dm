@@ -12,7 +12,7 @@
 	status_flags = CANSTUN|CANKNOCKDOWN|CANPUSH
 	mouse_opacity = MOUSE_OPACITY_ICON
 	faction = list("neutral")
-	a_intent = INTENT_HARM
+	combat_mode = TRUE
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
 	move_to_delay = 10
@@ -55,12 +55,10 @@
 	var/obj/item/implant/radio/mining/imp = new(src)
 	imp.implant(src)
 
-	access_card = new /obj/item/card/id(src)
-	var/datum/job/mining/M = new
-	access_card.access = M.get_access()
+	access_card = new /obj/item/card/id/advanced/gold(src)
+	SSid_access.apply_trim_to_card(access_card, /datum/id_trim/job/shaft_miner)
 
 	SetCollectBehavior()
-
 
 /mob/living/simple_animal/hostile/mining_drone/Destroy()
 	for (var/datum/action/innate/minedrone/action in actions)
@@ -122,17 +120,17 @@
 	deathmessage = "blows apart!"
 	..()
 
-/mob/living/simple_animal/hostile/mining_drone/attack_hand(mob/living/carbon/human/M)
+/mob/living/simple_animal/hostile/mining_drone/attack_hand(mob/living/carbon/human/user, list/modifiers)
 	. = ..()
 	if(.)
 		return
-	if(M.a_intent == INTENT_HELP)
+	if(!user.combat_mode)
 		toggle_mode()
 		switch(mode)
 			if(MINEDRONE_COLLECT)
-				to_chat(M, "<span class='info'>[src] has been set to search and store loose ore.</span>")
+				to_chat(user, "<span class='info'>[src] has been set to search and store loose ore.</span>")
 			if(MINEDRONE_ATTACK)
-				to_chat(M, "<span class='info'>[src] has been set to attack hostile wildlife.</span>")
+				to_chat(user, "<span class='info'>[src] has been set to attack hostile wildlife.</span>")
 		return
 
 /mob/living/simple_animal/hostile/mining_drone/CanAllowThrough(atom/movable/O)

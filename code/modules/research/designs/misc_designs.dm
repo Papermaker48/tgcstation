@@ -288,11 +288,11 @@
 
 /datum/design/id
 	name = "Identification Card"
-	desc = "A card used to provide ID and determine access across the station."
+	desc = "A card used to provide ID and determine access across the station. Has an integrated digital display and advanced microchips."
 	id = "idcard"
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron=200, /datum/material/glass = 100)
-	build_path = /obj/item/card/id
+	build_path = /obj/item/card/id/advanced
 	category = list("Electronics")
 	departmental_flags = DEPARTMENTAL_FLAG_SERVICE
 
@@ -307,7 +307,7 @@
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
 
 /datum/design/lavarods
-	name = "Lava-Resistant Metal Rods"
+	name = "Lava-Resistant Iron Rods"
 	id = "lava_rods"
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron=1000, /datum/material/plasma=500, /datum/material/titanium=2000)
@@ -503,7 +503,7 @@
 	desc = "A royal knight's favorite garments. Can be trimmed by any friendly person."
 	id = "knight_armour"
 	build_type = AUTOLATHE
-	materials = list(MAT_CATEGORY_RIGID = 10000)
+	materials = list(MAT_CATEGORY_ITEM_MATERIAL = 10000)
 	build_path = /obj/item/clothing/suit/armor/riot/knight/greyscale
 	category = list("Imported")
 
@@ -512,7 +512,7 @@
 	desc = "A royal knight's favorite hat. If you hold it upside down it's actually a bucket."
 	id = "knight_helmet"
 	build_type = AUTOLATHE
-	materials = list(MAT_CATEGORY_RIGID = 5000)
+	materials = list(MAT_CATEGORY_ITEM_MATERIAL = 5000)
 	build_path = /obj/item/clothing/head/helmet/knight/greyscale
 	category = list("Imported")
 

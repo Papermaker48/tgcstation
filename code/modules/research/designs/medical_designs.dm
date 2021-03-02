@@ -71,6 +71,15 @@
 	build_path = /obj/item/reagent_containers/glass/beaker/meta
 	category = list("Medical Designs")
 
+/datum/design/ph_meter
+	name = "Chemical analyser"
+	id = "ph_meter"
+	build_type = PROTOLATHE
+	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL
+	materials = list(/datum/material/glass = 2500, /datum/material/gold = 1000, /datum/material/titanium = 1000)
+	build_path = /obj/item/ph_meter
+	category = list("Medical Designs")
+
 /datum/design/bluespacesyringe
 	name = "Bluespace Syringe"
 	desc = "An advanced syringe that can hold 60 units of chemicals"
@@ -652,6 +661,23 @@
 	build_path = /obj/item/organ/ears/cybernetic/upgraded
 	category = list("Cybernetics", "Medical Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL
+
+/datum/design/cybernetic_eyes
+	name = "Basic Cybernetic Eyes"
+	desc = "A basic pair of cybernetic eyes."
+	id = "cybernetic_eyes"
+	build_type = PROTOLATHE | MECHFAB
+	construction_time = 30
+	materials = list(/datum/material/iron = 250, /datum/material/glass = 400)
+	build_path = /obj/item/organ/eyes/robotic/basic
+	category = list("Cybernetics", "Medical Designs")
+	departmental_flags = DEPARTMENTAL_FLAG_MEDICAL
+
+/datum/design/cybernetic_eyes/improved
+	name = "Cybernetic Eyes"
+	desc = "A pair of cybernetic eyes."
+	id = "cybernetic_eyes_improved"
+	build_path = /obj/item/organ/eyes/robotic
 
 /////////////////////
 ///Surgery Designs///
