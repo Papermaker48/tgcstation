@@ -4,7 +4,7 @@
 
 /obj/item/seeds
 	icon = 'icons/obj/hydroponics/seeds.dmi'
-	icon_state = "seed"				// Unknown plant seed - these shouldn't exist in-game.
+	icon_state = "seed" // Unknown plant seed - these shouldn't exist in-game.
 	worn_icon_state = "seed"
 	w_class = WEIGHT_CLASS_TINY
 	resistance_flags = FLAMMABLE
@@ -231,6 +231,7 @@
 					t_prod.seed.genes += trait
 			t_prod.transform = initial(t_prod.transform)
 			t_prod.transform *= TRANSFORM_USING_VARIABLE(t_prod.seed.potency, 100) + 0.5
+			ADD_TRAIT(t_prod, TRAIT_PLANT_WILDMUTATE, user)
 			t_amount++
 			if(t_prod.seed)
 				t_prod.seed.set_instability(round(instability * 0.5))

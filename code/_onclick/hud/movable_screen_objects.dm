@@ -1,7 +1,7 @@
 
 //////////////////////////
 //Movable Screen Objects//
-//   By RemieRichards	//
+//   By RemieRichards //
 //////////////////////////
 
 
@@ -28,7 +28,7 @@
 	var/list/modifiers = params2list(params)
 
 	//No screen-loc information? abort.
-	if(LAZYACCESS(modifiers, SCREEN_LOC))
+	if(!LAZYACCESS(modifiers, SCREEN_LOC))
 		return
 
 	//Split screen-loc up into X+Pixel_X and Y+Pixel_Y
