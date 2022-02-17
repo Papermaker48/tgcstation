@@ -40,7 +40,7 @@ GLOBAL_LIST_INIT(name2reagent, build_name2reagent())
 	var/datum/reagents/holder = null
 	/// LIQUID, SOLID, GAS
 	var/reagent_state = LIQUID
-	/// special data associated with this like viruses etc
+	/// Special data associated with the reagent that will be passed on upon transfer to a new holder.
 	var/list/data
 	/// increments everytime on_mob_life is called
 	var/current_cycle = 0
@@ -52,6 +52,8 @@ GLOBAL_LIST_INIT(name2reagent, build_name2reagent())
 	var/purity = 1
 	///the purity of the reagent on creation (i.e. when it's added to a mob and it's purity split it into 2 chems; the purity of the resultant chems are kept as 1, this tracks what the purity was before that)
 	var/creation_purity = 1
+	///The molar mass of the reagent - if you're adding a reagent that doesn't have a recipe, just add a random number between 10 - 800. Higher numbers are "harder" but it's mostly arbitary.
+	var/mass
 	/// color it looks in containers etc
 	var/color = "#000000" // rgb: 0, 0, 0
 	///how fast the reagent is metabolized by the mob
@@ -94,6 +96,9 @@ GLOBAL_LIST_INIT(name2reagent, build_name2reagent())
 	var/burning_volume = 0.5
 	///Assoc list with key type of addiction this reagent feeds, and value amount of addiction points added per unit of reagent metabolzied (which means * REAGENTS_METABOLISM every life())
 	var/list/addiction_types = null
+	///The amount a robot will pay for a glass of this (20 units but can be higher if you pour more, be frugal!)
+	var/glass_price
+
 
 /datum/reagent/New()
 	SHOULD_CALL_PARENT(TRUE)
@@ -101,6 +106,10 @@ GLOBAL_LIST_INIT(name2reagent, build_name2reagent())
 
 	if(material)
 		material = GET_MATERIAL_REF(material)
+	if(glass_price)
+		AddElement(/datum/element/venue_price, glass_price)
+	if(!mass)
+		mass = rand(10, 800)
 
 /datum/reagent/Destroy() // This should only be called by the holder, so it's already handled clearing its references
 	. = ..()
@@ -122,7 +131,7 @@ GLOBAL_LIST_INIT(name2reagent, build_name2reagent())
 	if((methods & penetrates_skin) && exposed_mob.reagents) //smoke, foam, spray
 		var/amount = round(reac_volume*clamp((1 - touch_protection), 0, 1), 0.1)
 		if(amount >= 0.5)
-			exposed_mob.reagents.add_reagent(type, amount)
+			exposed_mob.reagents.add_reagent(type, amount, added_purity = purity)
 
 /// Applies this reagent to an [/obj]
 /datum/reagent/proc/expose_obj(obj/exposed_obj, reac_volume)
@@ -177,13 +186,13 @@ Primarily used in reagents/reaction_agents
 	return
 
 /// Called when a reagent is inside of a mob when they are dead
-/datum/reagent/proc/on_mob_dead(mob/living/carbon/C)
+/datum/reagent/proc/on_mob_dead(mob/living/carbon/C, delta_time)
 	if(!(chemical_flags & REAGENT_DEAD_PROCESS))
 		return
 	current_cycle++
 	if(length(reagent_removal_skip_list))
 		return
-	holder.remove_reagent(type, metabolization_rate * C.metabolism_efficiency)
+	holder.remove_reagent(type, metabolization_rate * C.metabolism_efficiency * delta_time)
 
 /// Called by [/datum/reagents/proc/conditional_update_move]
 /datum/reagent/proc/on_move(mob/M)
@@ -191,7 +200,8 @@ Primarily used in reagents/reaction_agents
 
 /// Called after add_reagents creates a new reagent.
 /datum/reagent/proc/on_new(data)
-	return
+	if(data)
+		src.data = data
 
 /// Called when two reagents of the same are mixing.
 /datum/reagent/proc/on_merge(data, amount)
@@ -201,17 +211,13 @@ Primarily used in reagents/reaction_agents
 /datum/reagent/proc/on_update(atom/A)
 	return
 
-/// Called when the reagent container is hit by an explosion
-/datum/reagent/proc/on_ex_act(severity)
-	return
-
 /// Called if the reagent has passed the overdose threshold and is set to be triggering overdose effects
 /datum/reagent/proc/overdose_process(mob/living/M, delta_time, times_fired)
 	return
 
 /// Called when an overdose starts
 /datum/reagent/proc/overdose_start(mob/living/M)
-	to_chat(M, "<span class='userdanger'>You feel like you took too much of [name]!</span>")
+	to_chat(M, span_userdanger("You feel like you took too much of [name]!"))
 	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[type]_overdose", /datum/mood_event/overdose, name)
 	return
 

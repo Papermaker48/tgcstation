@@ -43,7 +43,8 @@
 
 	var/list/obj/machinery/atmospherics/atmos_machines = list()
 	var/list/obj/structure/cable/cables = list()
-	var/list/atom/atoms = list()
+	var/list/atom/movable/movables = list()
+	var/list/obj/docking_port/stationary/ports = list()
 	var/list/area/areas = list()
 
 	var/list/turfs = block(
@@ -58,20 +59,21 @@
 			bounds[MAP_MAXZ]
 			)
 		)
-	for(var/L in turfs)
-		var/turf/B = L
-		var/area/G = B.loc
-		areas |= G
+	for(var/turf/current_turf as anything in turfs)
+		var/area/current_turfs_area = current_turf.loc
+		areas |= current_turfs_area
 		if(!SSatoms.initialized)
 			continue
 
-		for(var/A in B)
-			atoms += A
-			if(istype(A, /obj/structure/cable))
-				cables += A
+		for(var/movable_in_turf in current_turf)
+			movables += movable_in_turf
+			if(istype(movable_in_turf, /obj/structure/cable))
+				cables += movable_in_turf
 				continue
-			if(istype(A, /obj/machinery/atmospherics))
-				atmos_machines += A
+			if(istype(movable_in_turf, /obj/machinery/atmospherics))
+				atmos_machines += movable_in_turf
+			if(istype(movable_in_turf, /obj/docking_port/stationary))
+				ports += movable_in_turf
 
 	// Not sure if there is some importance here to make sure the area is in z
 	// first or not.  Its defined In Initialize yet its run first in templates
@@ -81,11 +83,21 @@
 	if(!SSatoms.initialized)
 		return
 
-	SSatoms.InitializeAtoms(areas + turfs + atoms, returns_created_atoms ? created_atoms : null)
+	SSatoms.InitializeAtoms(areas + turfs + movables, returns_created_atoms ? created_atoms : null)
+
+	for(var/turf/unlit as anything in turfs)
+		if(unlit.always_lit)
+			continue
+		var/area/loc_area = unlit.loc
+		if(!loc_area.static_lighting)
+			continue
+		unlit.lighting_build_overlay()
+
 	// NOTE, now that Initialize and LateInitialize run correctly, do we really
 	// need these two below?
 	SSmachines.setup_template_powernets(cables)
 	SSair.setup_template_machinery(atmos_machines)
+	SSshuttle.setup_shuttles(ports)
 
 	//calculate all turfs inside the border
 	var/list/template_and_bordering_turfs = block(
@@ -100,16 +112,15 @@
 			bounds[MAP_MAXZ]
 			)
 		)
-	for(var/t in template_and_bordering_turfs)
-		var/turf/affected_turf = t
+	for(var/turf/affected_turf as anything in template_and_bordering_turfs)
 		affected_turf.air_update_turf(TRUE, TRUE)
 		affected_turf.levelupdate()
 
-/datum/map_template/proc/load_new_z()
+/datum/map_template/proc/load_new_z(secret = FALSE)
 	var/x = round((world.maxx - width) * 0.5) + 1
 	var/y = round((world.maxy - height) * 0.5) + 1
 
-	var/datum/space_level/level = SSmapping.add_new_zlevel(name, list(ZTRAIT_AWAY = TRUE))
+	var/datum/space_level/level = SSmapping.add_new_zlevel(name, secret ? ZTRAITS_AWAY_SECRET : ZTRAITS_AWAY)
 	var/datum/parsed_map/parsed = load_map(file(mappath), x, y, level.z_value, no_changeturf=(SSatoms.initialized == INITIALIZATION_INSSATOMS), placeOnTop=should_place_on_top)
 	var/list/bounds = parsed.bounds
 	if(!bounds)
@@ -179,9 +190,30 @@
 			placement = corner
 	return block(placement, locate(placement.x+width-1, placement.y+height-1, placement.z))
 
+/// Takes in a type path, locates an instance of that type in the cached map, and calculates its offset from the origin of the map, returns this offset in the form list(x, y).
+/datum/map_template/proc/discover_offset(obj/marker)
+	var/key
+	var/list/models = cached_map.grid_models
+	for(key in models)
+		if(findtext(models[key], "[marker]")) // Yay compile time checks
+			break // This works by assuming there will ever only be one mobile dock in a template at most
+
+	for(var/datum/grid_set/gset as anything in cached_map.gridSets)
+		var/ycrd = gset.ycrd
+		for(var/line in gset.gridLines)
+			var/xcrd = gset.xcrd
+			for(var/j in 1 to length(line) step cached_map.key_len)
+				if(key == copytext(line, j, j + cached_map.key_len))
+					return list(xcrd, ycrd)
+				++xcrd
+			--ycrd
+
 
 //for your ever biggening badminnery kevinz000
 //❤ - Cyberboss
-/proc/load_new_z_level(file, name)
-	var/datum/map_template/template = new(file, name)
-	template.load_new_z()
+/proc/load_new_z_level(file, name, secret)
+	var/datum/map_template/template = new(file, name, TRUE)
+	if(!template.cached_map || template.cached_map.check_for_errors())
+		return FALSE
+	template.load_new_z(secret)
+	return TRUE

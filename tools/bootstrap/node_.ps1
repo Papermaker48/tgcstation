@@ -17,7 +17,7 @@ function Download-Node {
 	if (Test-Path $NodeTarget -PathType Leaf) {
 		return
 	}
-	Write-Output "Downloading Node v$NodeVersion"
+	Write-Output "Downloading Node v$NodeVersion (may take a while)"
 	New-Item $NodeTargetDir -ItemType Directory -ErrorAction silentlyContinue | Out-Null
 	$WebClient = New-Object Net.WebClient
 	$WebClient.DownloadFile($NodeSource, $NodeTarget)
@@ -30,8 +30,8 @@ if ($Env:TG_BOOTSTRAP_CACHE) {
 	$Cache = $Env:TG_BOOTSTRAP_CACHE
 }
 $NodeVersion = Extract-Variable -Path "$BaseDir\..\..\dependencies.sh" -Key "NODE_VERSION_PRECISE"
-$NodeSource = "https://nodejs.org/download/release/v$NodeVersion/win-x86/node.exe"
-$NodeTargetDir = "$Cache\node-v$NodeVersion"
+$NodeSource = "https://nodejs.org/download/release/v$NodeVersion/win-x64/node.exe"
+$NodeTargetDir = "$Cache\node-v$NodeVersion-x64"
 $NodeTarget = "$NodeTargetDir\node.exe"
 
 ## Just print the path and exit

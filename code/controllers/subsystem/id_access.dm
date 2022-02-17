@@ -26,6 +26,8 @@ SUBSYSTEM_DEF(id_access)
 	var/list/sub_department_managers_tgui = list()
 	/// Helper list containing all trim paths that can be used as job templates. Intended to be used alongside logic for ACCESS_CHANGE_IDS. Grab templates from sub_department_managers_tgui for Head of Staff restrictions.
 	var/list/station_job_templates = list()
+	/// Helper list containing all trim paths that can be used as Centcom templates.
+	var/list/centcom_job_templates = list()
 	/// Helper list containing all PDA paths that can be painted by station machines. Intended to be used alongside logic for ACCESS_CHANGE_IDS. Grab templates from sub_department_managers_tgui for Head of Staff restrictions.
 	var/list/station_pda_templates = list()
 	/// Helper list containing all station regions.
@@ -36,7 +38,6 @@ SUBSYSTEM_DEF(id_access)
 
 /datum/controller/subsystem/id_access/Initialize(timeofday)
 	// We use this because creating the trim singletons requires the config to be loaded.
-	SSmapping.HACK_LoadMapConfig()
 	setup_access_flags()
 	setup_region_lists()
 	setup_trim_singletons()
@@ -47,6 +48,23 @@ SUBSYSTEM_DEF(id_access)
 	spare_id_safe_code = "[rand(0,9)][rand(0,9)][rand(0,9)][rand(0,9)][rand(0,9)]"
 
 	return ..()
+
+/**
+ * Called by [/datum/controller/subsystem/ticker/proc/setup]
+ *
+ * This runs through every /datum/id_trim/job singleton and ensures that its access is setup according to
+ * appropriate config entries.
+ */
+/datum/controller/subsystem/id_access/proc/refresh_job_trim_singletons()
+	for(var/trim in typesof(/datum/id_trim/job))
+		var/datum/id_trim/job/job_trim = trim_singletons_by_path[trim]
+
+		if(QDELETED(job_trim))
+			stack_trace("Trim \[[trim]\] missing from trim singleton list. Reinitialising this trim.")
+			trim_singletons_by_path[trim] = new trim()
+			continue
+
+		job_trim.refresh_trim_access()
 
 /// Build access flag lists.
 /datum/controller/subsystem/id_access/proc/setup_access_flags()
@@ -136,37 +154,37 @@ SUBSYSTEM_DEF(id_access)
 	sub_department_managers_tgui = list(
 		"[ACCESS_CAPTAIN]" = list(
 			"regions" = list(REGION_COMMAND),
-			"head" = "Captain",
+			"head" = JOB_CAPTAIN,
 			"templates" = list(),
 			"pdas" = list(),
 		),
 		"[ACCESS_HOP]" = list(
 			"regions" = list(REGION_GENERAL, REGION_SUPPLY),
-			"head" = "Head of Personnel",
+			"head" = JOB_HEAD_OF_PERSONNEL,
 			"templates" = list(),
 			"pdas" = list(),
 		),
 		"[ACCESS_HOS]" = list(
 			"regions" = list(REGION_SECURITY),
-			"head" = "Head of Security",
+			"head" = JOB_HEAD_OF_SECURITY,
 			"templates" = list(),
 			"pdas" = list(),
 		),
 		"[ACCESS_CMO]" = list(
 			"regions" = list(REGION_MEDBAY),
-			"head" = "Chief Medical Officer",
+			"head" = JOB_CHIEF_MEDICAL_OFFICER,
 			"templates" = list(),
 			"pdas" = list(),
 		),
 		"[ACCESS_RD]" = list(
 			"regions" = list(REGION_RESEARCH),
-			"head" = "Research Director",
+			"head" = JOB_RESEARCH_DIRECTOR,
 			"templates" = list(),
 			"pdas" = list(),
 		),
 		"[ACCESS_CE]" = list(
 			"regions" = list(REGION_ENGINEERING),
-			"head" = "Chief Engineer",
+			"head" = JOB_CHIEF_ENGINEER,
 			"templates" = list(),
 			"pdas" = list(),
 		),
@@ -187,6 +205,11 @@ SUBSYSTEM_DEF(id_access)
 				continue
 			var/list/templates = manager["templates"]
 			templates[trim_path] = trim.assignment
+
+	var/list/centcom_job_trims = typesof(/datum/id_trim/centcom) - typesof(/datum/id_trim/centcom/corpse)
+	for(var/trim_path in centcom_job_trims)
+		var/datum/id_trim/trim = trim_singletons_by_path[trim_path]
+		centcom_job_templates[trim_path] = trim.assignment
 
 	var/list/all_pda_paths = typesof(/obj/item/pda)
 	var/list/pda_regions = PDA_PAINTING_REGIONS
@@ -230,8 +253,8 @@ SUBSYSTEM_DEF(id_access)
 	desc_by_access["[ACCESS_GENETICS]"] = "Genetics Lab"
 	desc_by_access["[ACCESS_MORGUE]"] = "Morgue"
 	desc_by_access["[ACCESS_RND]"] = "R&D Lab"
-	desc_by_access["[ACCESS_TOXINS]"] = "Toxins Lab"
-	desc_by_access["[ACCESS_TOXINS_STORAGE]"] = "Toxins Storage"
+	desc_by_access["[ACCESS_ORDNANCE]"] = "Ordnance Lab"
+	desc_by_access["[ACCESS_ORDNANCE_STORAGE]"] = "Ordnance Storage"
 	desc_by_access["[ACCESS_CHEMISTRY]"] = "Chemistry Lab"
 	desc_by_access["[ACCESS_RD]"] = "RD Office"
 	desc_by_access["[ACCESS_BAR]"] = "Bar"
@@ -289,6 +312,7 @@ SUBSYSTEM_DEF(id_access)
 	desc_by_access["[ACCESS_MECH_SCIENCE]"] = "Science Mech Access"
 	desc_by_access["[ACCESS_MECH_ENGINE]"] = "Engineering Mech Access"
 	desc_by_access["[ACCESS_AUX_BASE]"] = "Auxiliary Base"
+	desc_by_access["[ACCESS_SERVICE]"] = "Service Hallway"
 	desc_by_access["[ACCESS_CENT_GENERAL]"] = "Code Grey"
 	desc_by_access["[ACCESS_CENT_THUNDER]"] = "Code Yellow"
 	desc_by_access["[ACCESS_CENT_STORAGE]"] = "Code Orange"
@@ -404,6 +428,8 @@ SUBSYSTEM_DEF(id_access)
 	var/datum/id_trim/trim = trim_singletons_by_path[trim_path]
 	id_card.trim_icon_override = trim.trim_icon
 	id_card.trim_state_override = trim.trim_state
+	id_card.trim_assignment_override = trim.assignment
+	id_card.sechud_icon_state_override = trim.sechud_icon_state
 
 	if(!check_forged || !id_card.forged)
 		id_card.assignment = trim.assignment
@@ -419,6 +445,8 @@ SUBSYSTEM_DEF(id_access)
 /datum/controller/subsystem/id_access/proc/remove_trim_from_chameleon_card(obj/item/card/id/advanced/chameleon/id_card)
 	id_card.trim_icon_override = null
 	id_card.trim_state_override = null
+	id_card.trim_assignment_override = null
+	id_card.sechud_icon_state_override = null
 
 /**
  * Adds the accesses associated with a trim to an ID card.

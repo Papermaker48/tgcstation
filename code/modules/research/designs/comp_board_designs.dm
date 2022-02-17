@@ -3,7 +3,7 @@
 /datum/design/board
 	name = "Computer Design ( NULL ENTRY )"
 	desc = "I promise this doesn't give you syndicate goodies!"
-	build_type = IMPRINTER
+	build_type = IMPRINTER | AWAY_IMPRINTER
 	materials = list(/datum/material/glass = 1000)
 
 /datum/design/board/arcade_battle
@@ -108,6 +108,7 @@
 	name = "Computer Design (Crew monitoring computer)"
 	desc = "Allows for the construction of circuit boards used to build a Crew monitoring computer."
 	id = "crewconsole"
+	build_type = IMPRINTER
 	build_path = /obj/item/circuitboard/computer/crew
 	category = list("Computer Boards")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY | DEPARTMENTAL_FLAG_MEDICAL
@@ -140,6 +141,7 @@
 	name = "Computer Design (Robotics Control Console)"
 	desc = "Allows for the construction of circuit boards used to build a Robotics Control console."
 	id = "robocontrol"
+	materials = list(/datum/material/glass = 1000, /datum/material/gold = 1000, /datum/material/silver = 1000, /datum/material/bluespace = 2000)
 	build_path = /obj/item/circuitboard/computer/robotics
 	category = list("Computer Boards")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
@@ -204,6 +206,7 @@
 	name = "Computer Design (Supply Console)"
 	desc = "Allows for the construction of circuit boards used to build a Supply Console."
 	id = "cargo"
+	build_type = IMPRINTER
 	build_path = /obj/item/circuitboard/computer/cargo
 	category = list("Computer Boards")
 	departmental_flags = DEPARTMENTAL_FLAG_CARGO
@@ -212,6 +215,7 @@
 	name = "Computer Design (Supply Request Console)"
 	desc = "Allows for the construction of circuit boards used to build a Supply Request Console."
 	id = "cargorequest"
+	build_type = IMPRINTER
 	build_path = /obj/item/circuitboard/computer/cargo/request
 	category = list("Computer Boards")
 	departmental_flags = DEPARTMENTAL_FLAG_CARGO
@@ -272,22 +276,6 @@
 	category = list("Computer Boards")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
 
-/datum/design/board/nanite_chamber_control
-	name = "Computer Design (Nanite Chamber Control)"
-	desc = "Allows for the construction of circuit boards used to build a new nanite chamber control console."
-	id = "nanite_chamber_control"
-	build_path = /obj/item/circuitboard/computer/nanite_chamber_control
-	category = list("Computer Boards")
-	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
-
-/datum/design/board/nanite_cloud_control
-	name = "Computer Design (Nanite Cloud Control)"
-	desc = "Allows for the construction of circuit boards used to build a new nanite cloud control console."
-	id = "nanite_cloud_control"
-	build_path = /obj/item/circuitboard/computer/nanite_cloud_controller
-	category = list("Computer Boards")
-	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
-
 /datum/design/board/advanced_camera
 	name = "Computer Design (Advanced Camera Console)"
 	desc = "Allows for the construction of circuit boards used to build advanced camera consoles."
@@ -301,4 +289,20 @@
 	desc = "Allows for the construction of circuit boards used to build a new civilian bounty pad console."
 	id = "bounty_pad_control"
 	build_path = /obj/item/circuitboard/computer/bountypad
+	category = list("Computer Boards")
+
+/datum/design/board/exoscanner_console
+	name = "Computer Design (Scanner Array Control Console)"
+	desc = "Allows for the construction of circuit boards used to build a new scanner array control console."
+	id = "exoscanner_console"
+	build_type = IMPRINTER
+	build_path = /obj/item/circuitboard/computer/exoscanner_console
+	category = list("Computer Boards")
+
+/datum/design/board/exodrone_console
+	name = "Computer Design (Exploration Drone Control Console)"
+	desc = "Allows for the construction of circuit boards used to build a new exploration drone control console."
+	id = "exodrone_console"
+	build_type = IMPRINTER
+	build_path = /obj/item/circuitboard/computer/exodrone_console
 	category = list("Computer Boards")

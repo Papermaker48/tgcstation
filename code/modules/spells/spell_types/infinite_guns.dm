@@ -1,11 +1,11 @@
 /obj/effect/proc_holder/spell/targeted/infinite_guns
 	name = "Lesser Summon Guns"
 	desc = "Why reload when you have infinite guns? Summons an unending stream of bolt action rifles that deal little damage, but will knock targets down. Requires both hands free to use. Learning this spell makes you unable to learn Arcane Barrage."
-	invocation_type = "none"
+	invocation_type = INVOCATION_NONE
 	include_user = TRUE
 	range = -1
 
-	school = "conjuration"
+	school = SCHOOL_CONJURATION
 	charge_max = 750
 	clothes_req = TRUE
 	cooldown_min = 10 //Gun wizard

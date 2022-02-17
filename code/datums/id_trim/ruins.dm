@@ -63,7 +63,7 @@
 
 /// Trim for various Centcom corpses.
 /datum/id_trim/centcom/corpse/private_security
-	assignment = "Private Security Force"
+	assignment = JOB_CENTCOM_PRIVATE_SECURITY
 	access = list(ACCESS_CENT_CAPTAIN, ACCESS_CENT_GENERAL, ACCESS_CENT_SPECOPS, ACCESS_CENT_MEDICAL, ACCESS_CENT_STORAGE, ACCESS_SECURITY, ACCESS_MECH_SECURITY)
 
 /// Trim for various Centcom corpses.
@@ -86,12 +86,21 @@
 	assignment = "Gunner"
 	template_access = null
 
-/// Trim for silverscale pirates.
+/// Trim for pirates.
+/datum/id_trim/pirate
+	assignment = "Pirate"
+	trim_state = "trim_unknown"
+	access = list(ACCESS_SYNDICATE)
+
+/// Trim for pirates.
 /datum/id_trim/pirate/silverscale
 	assignment = "Silver Scale Member"
-	trim_state = "trim_unknown"
 
-/// Trim for silverscale pirates.
-/datum/id_trim/pirate/silverscale/captain
-	assignment = "Silver Scale VIP"
+/// Trim for the pirate captain.
+/datum/id_trim/pirate/captain
+	assignment = "Pirate Captain"
 	trim_state = "trim_captain"
+
+/// Trim for the pirate captain.
+/datum/id_trim/pirate/captain/silverscale
+	assignment = "Silver Scale VIP"

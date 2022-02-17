@@ -29,9 +29,8 @@ export const NtosCardContent = (props, context) => {
     accessFlags,
     accessFlagNames,
     showBasic,
-  } = data;
-
-  const { templates } = data || {};
+    templates = {},
+  } = data; 
 
   if (!have_id_slot) {
     return (
@@ -214,7 +213,7 @@ const IDCardTarget = (props, context) => {
             </Stack.Item>
             <Stack.Item>
               <NumberInput
-                value={id_age}
+                value={id_age || 0}
                 unit="Years"
                 minValue={17}
                 maxValue={85}

@@ -8,10 +8,10 @@
 /area/centcom
 	name = "CentCom"
 	icon_state = "centcom"
-	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	static_lighting = TRUE
 	requires_power = FALSE
 	has_gravity = STANDARD_GRAVITY
-	area_flags = VALID_TERRITORY | UNIQUE_AREA | NOTELEPORT
+	area_flags = UNIQUE_AREA | NOTELEPORT
 	flags_1 = NONE
 
 /area/centcom/control
@@ -26,6 +26,18 @@
 /area/centcom/ferry
 	name = "CentCom Transport Shuttle Dock"
 
+/area/centcom/briefing
+	name = "CentCom Briefing Room"
+
+/area/centcom/briefing/storage
+	name = "CentCom Briefing Room Storage"
+
+/area/centcom/admin
+	name = "CentCom Administrative Office"
+
+/area/centcom/admin/storage
+	name = "CentCom Administrative Office Storage"
+
 /area/centcom/prison
 	name = "Admin Prison"
 
@@ -39,7 +51,9 @@
 /area/centcom/supplypod
 	name = "Supplypod Facility"
 	icon_state = "supplypod"
-	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
+	static_lighting = FALSE
+
+	base_lighting_alpha = 255
 
 /area/centcom/supplypod/pod_storage
 	name = "Supplypod Storage"
@@ -50,7 +64,7 @@
 	icon_state = "supplypod_loading"
 	var/loading_id = ""
 
-/area/centcom/supplypod/loading/Initialize()
+/area/centcom/supplypod/loading/Initialize(mapload)
 	. = ..()
 	if(!loading_id)
 		CRASH("[type] created without a loading_id")
@@ -82,7 +96,7 @@
 /area/tdome
 	name = "Thunderdome"
 	icon_state = "yellow"
-	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	static_lighting = TRUE
 	requires_power = FALSE
 	has_gravity = STANDARD_GRAVITY
 	flags_1 = NONE
@@ -90,12 +104,16 @@
 /area/tdome/arena
 	name = "Thunderdome Arena"
 	icon_state = "thunder"
-	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
+	static_lighting = FALSE
+	base_lighting_alpha = 255
+
 
 /area/tdome/arena_source
 	name = "Thunderdome Arena Template"
 	icon_state = "thunder"
-	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
+	static_lighting = FALSE
+	base_lighting_alpha = 255
+
 
 /area/tdome/tdome1
 	name = "Thunderdome (Team 1)"
@@ -120,10 +138,10 @@
 /area/wizard_station
 	name = "Wizard's Den"
 	icon_state = "yellow"
-	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	static_lighting = TRUE
 	requires_power = FALSE
 	has_gravity = STANDARD_GRAVITY
-	area_flags = VALID_TERRITORY | UNIQUE_AREA | NOTELEPORT
+	area_flags = UNIQUE_AREA | NOTELEPORT
 	flags_1 = NONE
 	network_root_id = "MAGIC_NET"
 
@@ -132,7 +150,10 @@
 	name = "Abductor Ship"
 	icon_state = "yellow"
 	requires_power = FALSE
-	area_flags = VALID_TERRITORY | UNIQUE_AREA | NOTELEPORT
+	area_flags = UNIQUE_AREA | NOTELEPORT
+
+	static_lighting = FALSE
+	base_lighting_alpha = 255
 	has_gravity = STANDARD_GRAVITY
 	flags_1 = NONE
 	network_root_id = "ALIENS"
@@ -143,7 +164,7 @@
 	icon_state = "syndie-ship"
 	requires_power = FALSE
 	has_gravity = STANDARD_GRAVITY
-	area_flags = VALID_TERRITORY | UNIQUE_AREA | NOTELEPORT
+	area_flags = UNIQUE_AREA | NOTELEPORT
 	flags_1 = NONE
 	ambience_index = AMBIENCE_DANGER
 	network_root_id = SYNDICATE_NETWORK_ROOT
@@ -151,7 +172,7 @@
 /area/syndicate_mothership/control
 	name = "Syndicate Control Room"
 	icon_state = "syndie-control"
-	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	static_lighting = TRUE
 	network_root_id = SYNDICATE_NETWORK_ROOT
 
 /area/syndicate_mothership/elite_squad
@@ -164,6 +185,9 @@
 	name = "Capture the Flag"
 	icon_state = "yellow"
 	requires_power = FALSE
+	static_lighting = FALSE
+
+	base_lighting_alpha = 255
 	has_gravity = STANDARD_GRAVITY
 	flags_1 = NONE
 
